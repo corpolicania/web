@@ -176,8 +176,6 @@ a {
 
 	.footer {
 		grid-template-columns: 100%;
-		grid-template-areas: "logo logo logo"
-							 "contacto contacto contacto";
 		/*grid-template-rows: ;*/
 	}
 
@@ -201,7 +199,7 @@ a {
 	}
 
 	.copy {
-		font-size: 1em;
+		font-size: .75em;
 		color: #009389;
 	}
 }
