@@ -70,7 +70,7 @@ body {
 	margin-top: 50px;
 	display: grid;
 	grid-template-columns: 35% 30% 35%;
-	grid-template-areas: "slogan logo contacto";
+	/* grid-template-areas: "slogan logo contacto"; */
 					
 
 	background-color: #17242c;
@@ -230,6 +230,9 @@ a {
 
 	.mail-home .btn-social {
 		max-width: 10%;
+	}
+	.copy {
+		font-size: .5em;
 	}
 
 }
