@@ -1,0 +1,252 @@
+body {
+	margin: 0;
+	background: #26394d;
+}
+	h1 {
+		margin-top: 20px;
+		margin-bottom: 5px;
+		text-align: center;
+		font-size: 3em;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 800;
+		color: white;
+		text-shadow: 5px 5px 5px #191919;
+	}
+
+	p {
+		padding: 0;
+		margin: 0;
+	}
+
+	.contenedor {
+		width: 100%;
+		align-content: center;
+		position: absolute;
+	}
+	
+	.content {
+		margin-top: 5px;
+		font-family: 'Alfa Slab One', cursive;
+		font-size: 4em;
+		color: white;
+		align-content: center;
+		text-align: center;
+		justify-content: center;
+		/*text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit;*/
+		text-shadow: 5px 5px 5px #191919;
+	}
+
+	.cat {
+		max-width: 45%;
+		margin-bottom: 0;
+	}
+
+	.txt {
+		margin: 0;
+		padding: 0;
+		line-height: 1em;
+		letter-spacing: .03em;
+
+	}
+
+	.web_site {
+		font-size: .8em;
+	}
+
+	.const {
+		color: #e0b513;
+	}
+
+	.come_back {
+		font-family: 'Quicksand', sans-serif;
+		font-size: .6em;
+		line-height: .8em;
+	} 
+
+
+.footer {
+	font-family: 'Open Sans', sans-serif;
+	background: #17242c;
+	margin-top: 50px;
+	display: grid;
+	grid-template-columns: 35% 30% 35%;
+	grid-template-areas: "slogan logo contacto";
+					
+
+	background-color: #17242c;
+	color: white;
+	align-items: center;
+	text-align: center;
+
+}
+
+.item {
+	padding: 10px 20px 10px 20px;
+	/*border: 1px white solid;*/
+}
+
+.slogan {
+	font-size: 1.5em;
+	font-weight: 300;
+	font-style: italic;
+	text-align: center;
+	padding-left: 20px;
+}
+
+.logo {
+	max-width: 55%;
+}
+
+.contacto {
+	font-weight: 300;
+	display: grid;
+	grid-template-rows: repeat(4, 25%);
+	align-items: center;
+	padding-right: 30px;
+}
+
+.mail-home {
+	display: inline-flex;
+	justify-content: center;	
+	align-items: center;
+	padding-top: 10px;
+}
+
+.mail-home:hover {
+	top: 5px;
+}
+	
+.btn-social {
+	max-width: 12%;
+	display: inline-block;
+	top: 5px;
+	left: 5px;
+	border-radius: 100%;
+	border: 2px white solid;
+	margin: 3px;
+
+
+}
+
+.btn-outline {
+	transition: all .3s ease-in-out;
+}
+
+.list-inline {
+
+}
+
+.list-inline .btn-social:hover {
+	transition: 700ms;
+	border: none;
+	transform: rotate(360deg);
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.mail-home .btn-social {
+	max-width: 8%;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	padding-right: 5px;
+}
+
+.copy {
+	font-size: .8em;
+	padding-top: 10px;
+	color: #009389;
+}
+
+/*------------------------------- 	RESPONSIVE 		-----------------------*/
+
+
+
+@media screen and (max-width: 950px) {
+	.cat {
+		max-width: 70%;
+	}
+
+	.content {
+		font-size: 3em;
+	}
+
+	.footer {
+		grid-template-columns: 100%;
+		grid-template-areas: "logo logo logo"
+							 "contacto contacto contacto";
+		/*grid-template-rows: ;*/
+	}
+
+	.slogan {
+		text-align: center;
+		padding: 8%;
+	}
+
+	.logo {
+		max-width: 60%;
+		padding: 10%;
+	}
+
+	.btn-social {
+		border: 1.5px white solid;
+		max-width: 5%;
+	}
+
+	.mail-home .btn-social {
+		max-width: 5%;
+	}
+
+	.copy {
+		font-size: 1em;
+		color: #009389;
+	}
+}
+
+
+@media screen and (max-width: 550px) {
+	h1 {
+		font-size: 2em;
+	}
+
+	.content {
+		font-size: 2em;
+	}
+	
+	.slogan {
+		font-size: 1.3em;
+		padding: 5%;
+	}
+
+	.logo {
+		max-width: 80%;
+	}
+	
+	.btn-social {
+		/*border: 1.5px solid white;*/
+		max-width: 15%;
+	}
+
+	.mail-home .btn-social {
+		max-width: 10%;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
