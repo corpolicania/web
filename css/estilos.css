@@ -384,9 +384,11 @@ body {
   border-radius: 5px;
   margin: 1em;
   text-align: center;
+  width: 100%;
   max-width: 350px;
 }
 .eventos-item2 img {
+  width: 100%;
   max-width: 350px;
   border-radius: 5px;
   border-bottom-right-radius: 0px;
@@ -485,6 +487,138 @@ footer .slogan {
   font-size: 1em;
   color: #fff;
 }
+@media screen and (max-width: 1024px) {
+  .slider-text-form {
+    padding-top: 0.5em;
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+  }
+  .slider-text {
+    display: none;
+  }
+  .slider-form {
+    margin-right: 5%;
+    margin-top: 5%;
+  }
+  .presentation-section {
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    width: 80%;
+  }
+  .presentation-title {
+    padding-top: 0.5em;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+  .presentation-text {
+    margin: 1em;
+  }
+  .presentation-text .licania-btn {
+    margin-top: 1em;
+    float: none;
+  }
+  .servicios {
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    width: 80%;
+  }
+  .servicios-item {
+    margin-top: 3em;
+    margin-bottom: 4em;
+  }
+  .servicios-item img {
+    margin-top: -10%;
+  }
+  .altiplano {
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    width: 80%;
+  }
+  .altiplano-txt {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .altiplano-txt p {
+    direction: ltr;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .altiplano-video {
+    padding: 0;
+    margin: auto;
+  }
+  .frotadas {
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    grid-template-areas: "texto" "img";
+    width: 80%;
+  }
+  .frotadas-txt {
+    text-align: center;
+    grid-area: texto;
+    margin-bottom: 1em;
+  }
+  .frotadas-txt p {
+    direction: ltr;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .frotadas-img {
+    padding: 0;
+    margin: auto;
+    grid-area: img;
+  }
+  .eventos {
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    width: 60%;
+  }
+  .eventos-item2 h4 {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .frotadas-txt {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .frotadas-img {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  .parallax-content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+  }
+}
+@media screen and (max-width: 635px) {
+  .eventos-item2 img {
+    max-width: 100%;
+    width: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .social ul {
+    display: none;
+  }
+  .altiplano-video {
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+  }
+  .altiplano-video iframe {
+    max-width: 100%;
+  }
+  .frotadas-img img {
+    max-width: 100%;
+  }
+}
+
 
 
 
