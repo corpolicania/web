@@ -357,7 +357,7 @@ body {
 }
 .altiplano-txt img {
   max-width: 100%;
-  width: 60%;
+  width: 70%;
   padding: 1em 0px;
 }
 .altiplano-video {
@@ -383,7 +383,7 @@ body {
 }
 .frotadas-txt img {
   max-width: 100%;
-  width: 60%;
+  width: 70%;
   padding: 1em 0px;
 }
 .frotadas-img {
@@ -661,6 +661,7 @@ footer .slogan {
     margin-bottom: 1em;
   }
   .frotadas-img {
+    width: 70%;
     padding: 0;
     margin: auto;
     grid-area: img;
@@ -671,7 +672,7 @@ footer .slogan {
     width: 60%;
   }
   .eventos-item2 h4 {
-    font-size: 1.5em;
+    font-size: 1em;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -691,21 +692,29 @@ footer .slogan {
     -ms-grid-columns: 100%;
     grid-template-columns: 100%;
   }
+  .section-title {
+    font-size: 1.2em;
+  }
+    
   .inscripciones {
     right: 5%;
     margin: auto;
   }
   .inscripciones h2 {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   .inscripciones button {
     float: none;
+  }
+  .frotadas-txt img {
+    width: 90%;
   }
 }
 @media screen and (max-width: 635px) {
   .eventos-item2 img {
     max-width: 100%;
     width: auto;
+    height: auto;
   }
 }
 @media screen and (max-width: 480px) {
@@ -717,7 +726,7 @@ footer .slogan {
     margin: auto;
   }
   .inscripciones h2 {
-    font-size: 1em;
+    font-size: .8em;
   }
   .altiplano-video {
     max-width: 100%;
