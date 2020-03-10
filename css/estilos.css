@@ -502,6 +502,7 @@ body {
   }
 }
 .slider1 {
+  display: none;      /* Hiddin ONU "Ejes de Desarrollo" */
   margin: auto;
   overflow: hidden;
   position: relative;
