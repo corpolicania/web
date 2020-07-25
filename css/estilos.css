@@ -672,72 +672,341 @@ footer .slogan {
     grid-template-columns: 100%;
     width: 60%;
   }
-  .eventos-item2 h4 {
-    font-size: 1em;
-  }
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
 }
-@media screen and (max-width: 1024px) {
-  .frotadas-txt {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-  .frotadas-img {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-  }
+
+.ancho {
+ 	width: 90%;
+ 	max-width: 1200px;
+ 	align-items: center;
+ }
+
+/*SOCIAL MEDIA*/
+
+.social ul {
+	position: fixed;
+	right: 0px;
+	margin-top: 12%;
+	list-style: none;
 }
-@media screen and (max-width: 768px) {
-  .parallax-content {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 100%;
-    grid-template-columns: 100%;
-  }
-  .section-title {
-    font-size: 1.2em;
-  }
-    
-  .inscripciones {
-    right: 5%;
-    margin: auto;
-  }
-  .inscripciones h2 {
-    font-size: 1.2em;
-  }
-  .inscripciones button {
-    float: none;
-  }
-  .frotadas-txt img {
-    width: 90%;
-  }
+
+.social ul li a {
+	position: relative;
+	float: right;
+	background: #009389;
+	width: 25px; height: 25px;
+	padding: 5px;
+	border-radius: 50%;
+	box-shadow: 3px 2px 2px #333;
+	border: 1px solid white;
 }
-@media screen and (max-width: 635px) {
-  .eventos-item2 img {
-    max-width: 100%;
-    width: auto;
-    height: auto;
-  }
+
+.social ul li a:hover {
+		border: none;
+	}
+
+/*Pseudo Elementos*/
+
+.social ul li a:after {
+	content: "";
+	position: fixed;
+	bottom: 0px; left: 0;
+	width: 1px; height: 1px;
+	border-radius: 100%;
+	z-index: 100;
 }
-@media screen and (max-width: 480px) {
-  .social ul {
-    display: none;
-  }
-  .inscripciones {
-    right: 5%;
-    margin: auto;
-  }
-  .inscripciones h2 {
-    font-size: .8em;
-  }
-  .altiplano-video {
-    max-width: 100%;
-    width: 400px;
-    height: auto;
-  }
-  .altiplano-video iframe {
-    max-width: 100%;
-  }
-  .frotadas-img img {
-    max-width: 100%;
-  }
+
+ /*Hover */
+.social ul li.facebook a:hover {
+	transform: scale(1.2);
+	background: #3b5998;
 }
+.social ul li.instagram a:hover { 
+	transform: scale(1.2);
+	background: linear-gradient(45deg, #F09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+}
+.social ul li.youtube a:hover {
+	transform: scale(1.2); 
+	background: #da2d2e; 
+}
+.social ul li.maps a:hover {
+	transform: scale(1.2);
+	background: #ffd04b; 
+ 	
+}
+
+
+@keyframes slidy {
+	0% {  left: 0%;}
+	20% { left: 0%;}
+	25% { left: -100%;}
+	45% { left: -100%;}
+	50% { left: -200%; }
+	70% { left: -200%; }
+	75% { left: -300%; }
+	95% { left: -300%; }
+	100% { left: -400%; }
+}
+
+.slider {
+	overflow: hidden;
+}
+
+.slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	padding: 0;
+	left: 0;
+	text-align: left;
+	font-size: 0;
+	animation: 30s slidy infinite;
+}
+
+.slider figure img {
+	width: 20%;
+	float: left;
+}
+
+
+/*FRASES DEL HEADER */
+
+.slider-text-form {
+	padding-top: calc(120px + 1.5em);
+	padding: calc(120px + 1.5em) 2em;
+	width: 90%;
+	max-width: 1200px;
+	position: relative;
+	align-items: center;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 1;
+}
+
+
+.slider-text {
+	text-align: left;
+}
+
+.slider-text h1 {
+		color: #fff;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 800;
+		font-size: 4em;
+		text-shadow: 2px 2px 4px #333;
+		line-height: 1em;
+	}
+
+.slider-text h2 {
+		color: #fff;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 600;
+		font-size: 2.5em;
+		text-shadow: 2px 2px 2px #333;
+		line-height: 1em;
+	}
+
+// TITULOS
+.section-title {
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	justify-content: center;
+	font-weight: 800;
+	font-size: 1.5em;
+	color: #333;
+	padding-top: 1em;
+	margin-bottom: .3em;
+}
+
+
+//QUIENES SOMOS
+.presentation-section {
+	grid-template-columns: repeat(2, 50%);
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	max-width: 1200px;
+	display: grid;
+	text-align: center;
+	margin: 1em auto;
+	padding-bottom: 2em;
+	margin-bottom: 2em;
+}
+
+.presentation-title {
+	font-size: 3em;
+	text-align: right;
+	font-family: 'Raleway', sans-serif;
+	text-align: right;
+	font-size: 1.7em;
+	font-weight: 800;
+	margin-right: .5em;
+	color: #f8c43d;
+}
+
+.presentation-text {
+	align-items: left;
+	padding: 1em;
+}
+
+.presentation-text p {
+	text-align: justify;
+} 
+
+//SERVICIOS
+
+.servicios {
+	margin-top: 2em;
+	width: 90%;
+	max-width: 1200px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding: 1em;
+	margin-bottom: 2em;
+}
+
+
+.servicios-item {
+	padding: 0 1em;
+	border: 1px solid #333;
+	border-radius: 10px;
+	margin: 1.5em;
+	text-align: center;
+}
+
+.servicios-item img {
+		margin-top: -20%;
+		width: 150px;
+		max-width: 100%;
+	}
+
+.servicios-item p {
+		text-align: justify;
+	}
+
+.servicios-item h4 {
+		color: #333;
+		font-weight: 600;
+		padding: .5em;
+	}
+
+//EVENTOS
+
+.altiplano {
+	width: 90%;
+	max-width: 1200px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin: 1em;
+	margin-bottom: 2em;
+}
+
+.altiplano-txt {
+	text-align: right;
+	padding: 1em;
+	margin: auto;
+}
+
+.altiplano-txt p {
+		text-align: justify;
+		direction: rtl; 		//Justificado con terminacion a la derecha
+	}
+
+.altiplano-txt img {
+		max-width: 100%;
+		width: 60%;
+		padding: 1em 0px;
+	}
+
+.altiplano-video {
+	padding: 1em;
+}
+
+.eventos {
+	width: 90%;
+	max-width: 1200px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding: 1em;
+	margin-bottom: 2em;
+}
+
+.eventos-item2 {
+	border: 1px solid 'Raleway';
+	border-radius: 5px;
+	background-color: #009389;
+	margin: 1em;
+	text-align: center;
+	color: #fff;
+	
+	}
+	
+
+
+.eventos-item2 img {
+		border-radius: 5px;
+}
+
+.eventos-item2 h4 {
+			color: @textoClaro;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 600;
+		}
+
+
+// PARALLAX PROYECCION
+
+.parallax {
+	background-image: url('../img/parallax-2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #333;
+	background-position: center;
+	overflow: hidden;
+	background-attachment: fixed;
+	vertical-align: middle;
+	width: 100%;
+	position: relative;
+	margin-bottom: 2em;
+}
+
+
+.parallax-content {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	width: 90%;
+	max-width: 1200px;
+}
+
+.parallax-item {
+	text-align: center;	
+}
+
+
+.parallax-item img {
+		margin: 15px;
+		max-width: 100%;
+		width: auto;
+		height: 12em;
+	}
+
+.parallax-item p {
+		color: #fff;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 600;
+		padding-top: 1em;
+		margin-bottom: 1em;
+	}
+
+
+
+
+
+
+
+
+
