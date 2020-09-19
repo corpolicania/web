@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0">
+	<title>LICANIA: Sala de Conciertos Digital</title>
+
+	<link rel="shortcut icon" href="img/logo.ico">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="css/glightbox.css" type="text/css">
+	<!-- <link rel="stylesheet" href="css/estilos.css" type="text/css">  -->
+
+	<!-- Fuentes de Google -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,500,600,700,700i,800|Raleway:300,400,800&display=swap" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,800&display=swap" rel="stylesheet">
+
+
+	<!-- SCRIPT PATROCINADORES -->
+	<script type="text/javascript">
+		var timer = 1000;
+
+		var i = 0;
+		var max = $('#c > li').length;
+		 
+			$("#c > li").eq(i).addClass('active').css('left','0');
+			$("#c > li").eq(i + 1).addClass('active').css('left','25%');
+			$("#c > li").eq(i + 2).addClass('active').css('left','50%');
+			$("#c > li").eq(i + 3).addClass('active').css('left','75%');
+		 
+
+			setInterval(function(){ 
+
+				$("#c > li").removeClass('active');
+
+				$("#c > li").eq(i).css('transition-delay','0.25s');
+				$("#c > li").eq(i + 1).css('transition-delay','0.5s');
+				$("#c > li").eq(i + 2).css('transition-delay','0.75s');
+				$("#c > li").eq(i + 3).css('transition-delay','1s');
+
+				if (i < max-4) {
+					i = i+4; 
+				}
+
+				else { 
+					i = 0; 
+				}  
+
+				$("#c > li").eq(i).css('left','0').addClass('active').css('transition-delay','1.25s');
+				$("#c > li").eq(i + 1).css('left','25%').addClass('active').css('transition-delay','1.5s');
+				$("#c > li").eq(i + 2).css('left','50%').addClass('active').css('transition-delay','1.75s');
+				$("#c > li").eq(i + 3).css('left','75%').addClass('active').css('transition-delay','2s');
+			
+			}, timer);
+		 
+	</script>
+
+	<!-- GALLERY -->
+
+	<script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+
+	<script type="text/javascript">
+    	const lightbox = GLightbox({ 
+    		touchNavigation: true,
+    		loop: true,
+    		autoplayVideos: true
+    	});
+	</script>
+		
+
+</head>
+<body class="digital-body">
+
+	<header>
+		
+	<div class="slider">
+
+		<div class="logo-banner-digital">
+			<a href="index.html">
+				<img class="logo-digital" width="8%" position="absolute" src="img/LicaniaLogo.png" alt="Corporación Licania">
+			</a>
+			<h1>Sala de Conciertos Digital</h1>
+
+			<img class="sala-conciertos-img" src="img/sala.png" alt="Logo Sala de Conciertos Digital">
+
+
+		</div>
+	</div>
+
+		
+
+	<div class="social">
+			    <ul>
+			      <li class="instagram">
+			        <a href="https://www.instagram.com/corpolicania/" target="_blank">
+			          <img src="img/ig_icon.svg" alt="Instagram">
+			        </a>
+			      </li>
+			    
+			      
+			      <li class="youtube">
+			        <a href="https://www.youtube.com/channel/UCqnnqoHH2zrvdJOC6Kt0TnA" target="_blank">
+			          <img src="img/yt_icon.svg" alt="YouTube">
+			        </a>
+			      </li>
+
+			      <li class="facebook">
+			        <a href="https://www.facebook.com/Licaniamarinilla" target="_blank">
+			          <img src="img/fb_icon.svg" alt="Facebook">
+			        </a>
+			      </li>
+			      
+			      
+			      <li class="maps">
+			        <a href="https://goo.gl/maps/NhTyg3SwWomqv1m87" target="_blank">
+			          <img src="img/home_icon.svg" alt="Maps">
+			        </a>
+			      </li>
+			    
+			    </ul>
+	</div>
+
+	</header>
+
+
+
+	<main class="ancho">
+		<div class="digital-content">
+
+			<div class="tabs-wrapper">
+	        <input type="radio" name="tab" id="tab1" checked="checked">
+	        <label for="tab1" class="label-1">Conciertos</label>
+	        <input type="radio" name="tab" id="tab2">
+	        <label for="tab2" class="label-2">Programación</label>
+	        <input type="radio" name="tab" id="tab3">
+	        <label for="tab3" class="label-3">Formación</label>
+	        <input type="radio" name="tab" id="tab4">
+	        <label for="tab4" class="label-4">Fotografías</label>
+	  
+        
+  <div class="tab-body-wrapper">
+    <div id="tab-body-1" class="tab-body">
+      <h3>Galería de Conciertos</h3>
+
+      <p>
+      	En esta galería puedes ver todos los conciertos de ALTIPLANO Festival de Jazz del Oriente y del Encuentro de Cuerdas Frotadas del Oriente 2020
+      </p>
+
+      <section class="video-gallery">
+      	
+      <img src="img/JuanC-play.jpg" alt="Juan Corrales Jazz Group" onclick="myGallery.open('', [0])">
+      <!-- <img src="img/JuanC.jpg" alt="Juan Corrales Jazz Group" onclick="myGallery.open('', [1])"> -->
+
+      </section>
+      
+
+
+    </div>
+    <div id="tab-body-2" class="tab-body">
+      <h3>Programación</h3>
+      <p>
+      	No te pierdas nuestros estrenos en vivo. Aquí podrás encontrar toda la información con las fechas de emisión de nuestros conciertos.
+      </p>
+      	<div class="section">
+			   		<img class="digital-program" src="img/concert-program.jpg" alt="Programacion Sala de Conciertos Digital">
+		</div>
+    </div>
+    <div id="tab-body-3" class="tab-body">
+      <h3>Oferta Formativa</h3>
+   		<p>
+			 En el marco del proyecto <b>"Licania: Sala de Conciertos Digital"</b>. La corporación Licania se complace en invitar a músicos de Jazz y Cuerdas frotadas a hacer parte de unos talleres de formación que tendrán lugar en el mes de septiembre y octubre en los cuales se realizará el montaje de dos obras que serán editadas en forma de mosaico y harán parte de nuestra sala de conciertos digital. En el siguiente formulario buscamos recopilar información sobre las personas interesadas en participar de estos talleres y montajes. Oportunamente nos pondremos en contacto con l@s interesad@s para darles a conocer las fechas y horarios de los talleres. 
+		</p>      
+		<p>
+			¿Quieres tocar con nosotros? Te invitamos a participar de nuestra oferta formativa y a participar de los ensambles virtuales de nuestra sala.
+		</p>
+		<p>
+			Haz tu preinscripcion
+			<a href="https://forms.gle/y76i6kz6wiiMBXz68">
+				<br>
+				<button class="licania-btn">Inscribete Aquí</button>
+			</a>
+		</p>
+    </div>
+    <div id="tab-body-4" class="tab-body">
+     <h3>Registro Fotográfico</h3>
+     <p>
+     	Así creamos nuestra Sala Digital. Esta galería muestra algunas fotos del detrás de escena de la grabación de los conciertos.
+     </p>
+     <section class="photo-gallery">
+     	<img src="img/digital/1.jpg" alt="Grabacion" onclick="photoGallery.open('', [0])">
+     	<img src="img/digital/2.jpg" alt="Grabacion" onclick="photoGallery.open('', [1])">
+     	<img src="img/digital/3.jpg" alt="Grabacion" onclick="photoGallery.open('', [2])">
+     	<img src="img/digital/4.jpg" alt="Grabacion" onclick="photoGallery.open('', [3])">
+     	<img src="img/digital/5.jpg" alt="Grabacion" onclick="photoGallery.open('', [4])">
+     	<img src="img/digital/6.jpg" alt="Grabacion" onclick="photoGallery.open('', [5])">
+     	<img src="img/digital/7.jpg" alt="Grabacion" onclick="photoGallery.open('', [6])">
+     	<img src="img/digital/8.jpg" alt="Grabacion" onclick="photoGallery.open('', [7])">
+     	<img src="img/digital/9.jpg" alt="Grabacion" onclick="photoGallery.open('', [8])">
+     	<img src="img/digital/10.jpg" alt="Grabacion" onclick="photoGallery.open('', [9])">
+     	<img src="img/digital/11.jpg" alt="Grabacion" onclick="photoGallery.open('', [10])">
+     	<img src="img/digital/12.jpg" alt="Grabacion" onclick="photoGallery.open('', [11])">
+     	<img src="img/digital/13.jpg" alt="Grabacion" onclick="photoGallery.open('', [12])">
+     	<img src="img/digital/14.jpg" alt="Grabacion" onclick="photoGallery.open('', [13])">
+     	<img src="img/digital/15.jpg" alt="Grabacion" onclick="photoGallery.open('', [14])">
+     	<img src="img/digital/16.jpg" alt="Grabacion" onclick="photoGallery.open('', [15])">
+     	<img src="img/digital/17.jpg" alt="Grabacion" onclick="photoGallery.open('', [16])">
+     	<img src="img/digital/18.jpg" alt="Grabacion" onclick="photoGallery.open('', [17])">
+     	<img src="img/digital/19.jpg" alt="Grabacion" onclick="photoGallery.open('', [18])">
+     	<img src="img/digital/20.jpg" alt="Grabacion" onclick="photoGallery.open('', [19])">
+     	<img src="img/digital/21.jpg" alt="Grabacion" onclick="photoGallery.open('', [20])">
+     	<img src="img/digital/22.jpg" alt="Grabacion" onclick="photoGallery.open('', [21])">
+     	<img src="img/digital/23.jpg" alt="Grabacion" onclick="photoGallery.open('', [22])">
+     	<img src="img/digital/24.jpg" alt="Grabacion" onclick="photoGallery.open('', [23])">
+     	<img src="img/digital/25.jpg" alt="Grabacion" onclick="photoGallery.open('', [24])">
+     	<img src="img/digital/26.jpg" alt="Grabacion" onclick="photoGallery.open('', [25])">
+     	<img src="img/digital/27.jpg" alt="Grabacion" onclick="photoGallery.open('', [26])">
+     	<img src="img/digital/28.jpg" alt="Grabacion" onclick="photoGallery.open('', [27])">
+     	<img src="img/digital/29.jpg" alt="Grabacion" onclick="photoGallery.open('', [28])">
+     	<img src="img/digital/30.jpg" alt="Grabacion" onclick="photoGallery.open('', [29])">
+     	<img src="img/digital/31.jpg" alt="Grabacion" onclick="photoGallery.open('', [30])">
+     	<img src="img/digital/32.jpg" alt="Grabacion" onclick="photoGallery.open('', [31])">
+     	<img src="img/digital/33.jpg" alt="Grabacion" onclick="photoGallery.open('', [32])">
+     	<img src="img/digital/34.jpg" alt="Grabacion" onclick="photoGallery.open('', [33])">
+     </section>
+
+    </div>
+
+  </div>
+</div>
+			
+		</div>
+
+
+
+
+	<h2 class="patrocinadores-title">NUESTROS ALIADOS</h2>
+
+	<!-- SCRIPT PATROCINADOES -->
+ 	<div class="slider1 patrocinadores">
+
+	<div class="slide-track desarrollo">
+
+		<div class="slide slide-patrocinio">
+			<img src="img/aliados/mincultura.png">
+		</div>
+
+		<div class="slide">
+			<img src="img/aliados/ccm.png">
+		</div>
+
+		<div class="slide">
+			<img src="img/aliados/music-colors.png">
+		</div>
+
+		<div class="slide">
+			<img src="img/aliados/juventudes.png">
+		</div>
+
+		<div class="slide">
+			<img src="img/aliados/marinilla.png">
+		</div>
+
+		<div class="slide">
+			<img src="img/aliados/la-cite.png">
+		</div>
+
+		<div class="slide">
+			<img src="img/aliados/concejo.png">
+		</div>
+
+		<div class="slide">
+			<img src="img/aliados/bordalaser.png">
+		</div>
+
+		<div class="slide">
+			<img src="img/aliados/la-corpo.png">
+		</div>
+
+		<div class="slide">
+			<img src="img/aliados/xtreme-wings.png">
+		</div>
+
+		<div class="slide">
+			<img src="img/aliados/penolini.png">
+		</div>
+
+
+
+	</div>
+	</div>
+		
+	</main>
+
+
+    
+
+	<br>
+
+	<footer class="digital-footer">
+		<img src="img/LicaniaLogo.png" alt="Licania logo">
+		<div>
+			<h4 class="slogan">
+			"Crear tedijo social a través de la música, la educación y el arte"
+		</h4>
+		</div>
+		<div class="social-footer">
+			<span class="footer">
+				<a href="https://www.facebook.com/Licaniamarinilla" target="_blank">
+				          <img src="img/fb_icon.svg" alt="Facebook">
+				        </a>
+
+				<a href="https://www.instagram.com/corpolicania/" target="_blank">
+				          <img src="img/ig_icon.svg" alt="Instagram">
+				        </a>
+
+				<a href="https://www.youtube.com/channel/UCqnnqoHH2zrvdJOC6Kt0TnA" target="_blank">
+				          <img src="img/yt_icon.svg" alt="YouTube">
+				        </a>
+
+				<a href="mailto:info@licania.org" target="_blank">
+					<img src="img/mail_icon.svg" alt="Enviar Email">
+				</a>
+				<a href="https://goo.gl/maps/NhTyg3SwWomqv1m87" target="_blank">
+				          <img src="img/home_icon.svg" alt="Maps">
+				        </a>
+			</span>
+			
+		</div>
+		
+		<div class="marca">
+			<div class="ancho">
+				<p>&copy; 2020. Todos los derechos reservados. <b> Corporación Licania <b></p>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript">
+ 		const photoGallery = GLightbox({
+	    elements: [
+	        {
+	            'href': 'img/digital/1.jpg',
+	            'type': 'image', 
+	        },
+	         {
+	            'href': 'img/digital/2.jpg',
+	            'type': 'image', 
+	        },
+	         {
+	            'href': 'img/digital/3.jpg',
+	            'type': 'image', 
+	        },
+	         {
+	            'href': 'img/digital/4.jpg',
+	            'type': 'image', 
+	        },
+	          {
+	            'href': 'img/digital/5.jpg',
+	            'type': 'image', 
+	        },
+	          {
+	            'href': 'img/digital/6.jpg',
+	            'type': 'image', 
+	        },
+	          {
+	            'href': 'img/digital/7.jpg',
+	            'type': 'image', 
+	        },
+	          {
+	            'href': 'img/digital/8.jpg',
+	            'type': 'image', 
+	        },
+	        {
+	            'href': 'img/digital/9.jpg',
+	            'type': 'image', 
+	        },
+	        {
+	            'href': 'img/digital/10.jpg',
+	            'type': 'image', 
+	        },
+	        {
+	            'href': 'img/digital/11.jpg',
+	            'type': 'image', 
+	        },
+	        {
+	            'href': 'img/digital/12.jpg',
+	            'type': 'image', 
+	        },
+	        {
+	            'href': 'img/digital/13.jpg',
+	            'type': 'image', 
+	        },
+	        {
+	            'href': 'img/digital/14.jpg',
+	            'type': 'image', 
+	        },
+	        {
+	            'href': 'img/digital/15.jpg',
+	            'type': 'image', 
+	        },
+	        {
+	            'href': 'img/digital/16.jpg',
+	            'type': 'image', 
+	        },
+	        {
+	            'href': 'img/digital/17.jpg',
+	            'type': 'image', 
+	        },
+	        {
+	            'href': 'img/digital/18.jpg',
+	            'type': 'image', 
+	        },
+	        {
+	            'href': 'img/digital/19.jpg',
+	            'type': 'image', 
+	        },
+	        {
+	            'href': 'img/digital/20.jpg',
+	            'type': 'image', 
+	        },
+	        {
+	            'href': 'img/digital/21.jpg',
+	            'type': 'image', 
+	        },
+	        {
+	            'href': 'img/digital/22.jpg',
+	            'type': 'image', 
+	        },
+	        {
+	            'href': 'img/digital/23.jpg',
+	            'type': 'image', 
+	        },
+	        {
+	            'href': 'img/digital/24.jpg',
+	            'type': 'image', 
+	        },
+	        {
+	            'href': 'img/digital/25.jpg',
+	            'type': 'image', 
+	        },
+	        {
+	            'href': 'img/digital/26.jpg',
+	            'type': 'image', 
+	        },{
+	            'href': 'img/digital/27.jpg',
+	            'type': 'image', 
+	        },{
+	            'href': 'img/digital/28.jpg',
+	            'type': 'image', 
+	        },{
+	            'href': 'img/digital/29.jpg',
+	            'type': 'image', 
+	        },{
+	            'href': 'img/digital/30.jpg',
+	            'type': 'image', 
+	        },{
+	            'href': 'img/digital/31.jpg',
+	            'type': 'image', 
+	        },{
+	            'href': 'img/digital/32.jpg',
+	            'type': 'image', 
+	        },{
+	            'href': 'img/digital/33.jpg',
+	            'type': 'image', 
+	        },{
+	            'href': 'img/digital/34.jpg',
+	            'type': 'image', 
+	        },
+
+	        {
+	            'content': document.getElementById('inline-example') // this will append a node inside the slide
+	        },
+	    ],
+		});
+		 // photoGallery.open();
+ 	</script>
+
+	<script type="text/javascript">
+ 		const myGallery = GLightbox({
+	    elements: [
+	        {
+	            'href': 'https://youtu.be/icOLqidfh6s',
+	            'type': 'video',
+	            'source': 'youtube', //vimeo, youtube or local
+	            'width': 900,
+	            'title': 'Juan Corrales Jazz Group',
+	            'description': 'Primer concierto de la segunda edición de ALTIPLANO Festival de Jazz del Oriente, en el marco de "Licania: Sala de Conciertos Digital', 
+	        },
+
+	        // {
+	        //     'href': 'https://youtu.be/icOLqidfh6s',
+	        //     'type': 'video',
+	        //     'source': 'youtube', //vimeo, youtube or local
+	        //     'width': 900,
+	        //     'title': 'Juan Corrales Promo',
+	        //     'description': 'Invitacion: Primer concierto de la segunda edición de ALTIPLANO Festival de Jazz del Oriente, en el marco de "Licania: Sala de Conciertos Digital', 
+	        // },
+	        {
+	            'content': document.getElementById('inline-example') // this will append a node inside the slide
+	        },
+	    ],
+	    autoplayVideos: true,
+		});
+		myGallery.open();
+ 	</script>
+	
+</body>
+</html>
