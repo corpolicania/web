@@ -103,6 +103,7 @@
   width: 90%;
 }
 .logo-banner-digital {
+  top: 60px;
   position: absolute;
   width: 100%;
   height: 25%;
@@ -576,6 +577,7 @@ body {
   margin: auto;
 }
 .logo-banner {
+  display: none;
   position: absolute;
   width: 100%;
   height: 25%;
@@ -802,7 +804,7 @@ body {
   font-size: 3em;
   font-family: 'Raleway', sans-serif;
   text-align: right;
-  font-size: 1.7em;
+  font-size: 1.5em;
   font-weight: 800;
   margin-right: 0.5em;
   color: #f6b50c;
@@ -1311,7 +1313,7 @@ footer .slogan {
 	.insc-btn, .noThanks-btn {
 		font-size: .9em;
 	}
-  
+
   .section-title {
     font-size: 1.2em;
   }
@@ -1367,10 +1369,3 @@ footer .slogan {
     max-width: 100%;
   }
 }
-
-
-
-
-
-
-
