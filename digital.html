@@ -7,6 +7,8 @@
 
 	<link rel="shortcut icon" href="img/logo.ico">
 	<link rel="stylesheet" href="css/estilos.css" type="text/css">
+	<link rel="stylesheet" href="css/menu.css" type="text/css">
+	<link rel="stylesheet" href="css/fonts.css" type="text/css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,7 +18,7 @@
 
 	<!-- Fuentes de Google -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,500,600,700,700i,800|Raleway:300,400,800&display=swap" rel="stylesheet">
-	
+
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,800&display=swap" rel="stylesheet">
 
 
@@ -26,14 +28,14 @@
 
 		var i = 0;
 		var max = $('#c > li').length;
-		 
+
 			$("#c > li").eq(i).addClass('active').css('left','0');
 			$("#c > li").eq(i + 1).addClass('active').css('left','25%');
 			$("#c > li").eq(i + 2).addClass('active').css('left','50%');
 			$("#c > li").eq(i + 3).addClass('active').css('left','75%');
-		 
 
-			setInterval(function(){ 
+
+			setInterval(function(){
 
 				$("#c > li").removeClass('active');
 
@@ -43,20 +45,20 @@
 				$("#c > li").eq(i + 3).css('transition-delay','1s');
 
 				if (i < max-4) {
-					i = i+4; 
+					i = i+4;
 				}
 
-				else { 
-					i = 0; 
-				}  
+				else {
+					i = 0;
+				}
 
 				$("#c > li").eq(i).css('left','0').addClass('active').css('transition-delay','1.25s');
 				$("#c > li").eq(i + 1).css('left','25%').addClass('active').css('transition-delay','1.5s');
 				$("#c > li").eq(i + 2).css('left','50%').addClass('active').css('transition-delay','1.75s');
 				$("#c > li").eq(i + 3).css('left','75%').addClass('active').css('transition-delay','2s');
-			
+
 			}, timer);
-		 
+
 	</script>
 
 	<!-- GALLERY -->
@@ -64,25 +66,38 @@
 	<script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
 
 	<script type="text/javascript">
-    	const lightbox = GLightbox({ 
+    	const lightbox = GLightbox({
     		touchNavigation: true,
     		loop: true,
     		autoplayVideos: true
     	});
 	</script>
-		
+
 
 </head>
 <body class="digital-body">
 
 	<header>
-		
+
+		<!-- MENU RESPONSIVE-->
+		<div class="menu_bar">
+			<a href="#" class="btn-menu"><span class="icon-bars"></span>Menú</a>
+		</div>
+		<nav class="nav-bar">
+			<ul>
+				<li><a href="index.html" class="logo-icon"><span class="icon-LicaniaLogo"></span></a></li>
+				<li><a href="https://forms.gle/tauLKVTXvTBpL3CQ8" target="_blank" class="icon"><span class="icon-clipboard"></span>Inscripciones</a></li>
+				<li><a href="#" class="icon"><span class="icon-briefcase"></span>La Corporación</a></li>
+				<li><a href="digital.html" class="icon"><span class="icon-music"></span>Sala de Conciertos</a></li>
+				<li><a href="#" class="icon"><span class="icon-calendar"></span>Eventos</a></li>
+				<li><a href="#" class="icon"><span class="icon-file-text2"></span>Blog</a></li>
+			</ul>
+		</nav>
+
+
 	<div class="slider">
 
 		<div class="logo-banner-digital">
-			<a href="index.html">
-				<img class="logo-digital" width="8%" position="absolute" src="img/LicaniaLogo.png" alt="Corporación Licania">
-			</a>
 			<h1>Sala de Conciertos Digital</h1>
 
 			<img class="sala-conciertos-img" src="img/SALA.png" alt="Logo Sala de Conciertos Digital">
@@ -91,7 +106,7 @@
 		</div>
 	</div>
 
-		
+
 
 	<div class="social">
 			    <ul>
@@ -100,8 +115,8 @@
 			          <img src="img/ig_icon.svg" alt="Instagram">
 			        </a>
 			      </li>
-			    
-			      
+
+
 			      <li class="youtube">
 			        <a href="https://www.youtube.com/channel/UCqnnqoHH2zrvdJOC6Kt0TnA" target="_blank">
 			          <img src="img/yt_icon.svg" alt="YouTube">
@@ -113,14 +128,14 @@
 			          <img src="img/fb_icon.svg" alt="Facebook">
 			        </a>
 			      </li>
-			      
-			      
+
+
 			      <li class="maps">
 			        <a href="https://goo.gl/maps/NhTyg3SwWomqv1m87" target="_blank">
 			          <img src="img/home_icon.svg" alt="Maps">
 			        </a>
 			      </li>
-			    
+
 			    </ul>
 	</div>
 
@@ -135,13 +150,9 @@
 	        <input type="radio" name="tab" id="tab1" checked="checked">
 	        <label for="tab1" class="label-1">Conciertos</label>
 	        <input type="radio" name="tab" id="tab2">
-	        <label for="tab2" class="label-2">Programación</label>
-	        <input type="radio" name="tab" id="tab3">
-	        <label for="tab3" class="label-3">Formación</label>
-	        <input type="radio" name="tab" id="tab4">
 	        <label for="tab4" class="label-4">Fotografías</label>
-	  
-        
+
+
   <div class="tab-body-wrapper">
     <div id="tab-body-1" class="tab-body">
       <h3>Galería de Conciertos</h3>
@@ -151,7 +162,7 @@
       </p>
 
       <section class="video-gallery">
-      	
+
       <img src="img/JuanC-play.jpg" alt="Juan Corrales Jazz Group" onclick="myGallery.open('', [0])">
       <img src="img/SofiaG-play.png" alt="Sofía Giraldo" onclick="myGallery.open('', [1])">
       <img src="img/deChonta-play.jpg" alt="De Chonta" onclick="myGallery.open('', [2])">
@@ -163,40 +174,10 @@
       <img src="img/jam_session-play.png" alt="Jam Session virtual" onclick="myGallery.open('', [8])">
       <img src="img/ensamble_frotadas-play.png" alt="Ensamble virtual de Cuerdas Frotadas" onclick="myGallery.open('', [9])">
 
-      </section>
-      
-
+		</section>
 
     </div>
-    <div id="tab-body-2" class="tab-body">
-      <h3>Programación</h3>
-      <p>
-      	No te pierdas nuestros estrenos en vivo. Aquí podrás encontrar toda la información con las fechas de emisión de nuestros conciertos.
-      </p>
-      	<div class="section">
-			   		<img class="digital-program" src="img/concert-program.jpg" alt="Programacion Sala de Conciertos Digital">
-		</div>
-    </div>
-    <div id="tab-body-3" class="tab-body">
-      <h3>Oferta Formativa</h3>
-   		<p>
-			 En el marco del proyecto <b>"Licania: Sala de Conciertos Digital"</b>. La corporación Licania se complace en invitar a músicos de Jazz y Cuerdas frotadas a hacer parte de unos talleres de formación que tendrán lugar en el mes de septiembre y octubre en los cuales se realizará el montaje de dos obras que serán editadas en forma de mosaico y harán parte de nuestra sala de conciertos digital. En el siguiente formulario buscamos recopilar información sobre las personas interesadas en participar de estos talleres y montajes. Oportunamente nos pondremos en contacto con l@s interesad@s para darles a conocer las fechas y horarios de los talleres. 
-		</p>      
-		<p>
-			¿Quieres hacer parte de nuestra Sala de Conciertos? Te invitamos a participar de nuestra oferta formativa y a participar de los ensambles virtuales de nuestra sala.
-		</p>
-	    	<div class="section">
-			  <img class="digital-program" src="img/formacion.png" alt="Programacion Oferta Académica">
-		</div>
-	    	<br>
-		<p>
-			Haz tu Inscripcion
-			<a href="https://forms.gle/y76i6kz6wiiMBXz68">
-				<br>
-				<button class="licania-btn">Inscribete Aquí</button>
-			</a>
-		</p>
-    </div>
+
     <div id="tab-body-4" class="tab-body">
      <h3>Registro Fotográfico</h3>
      <p>
@@ -243,7 +224,7 @@
 
   </div>
 </div>
-			
+
 		</div>
 
 
@@ -304,11 +285,11 @@
 
 	</div>
 	</div>
-		
+
 	</main>
 
 
-    
+
 
 	<br>
 
@@ -340,12 +321,12 @@
 				          <img src="img/home_icon.svg" alt="Maps">
 				        </a>
 			</span>
-			
+
 		</div>
-		
+
 		<div class="marca">
 			<div class="ancho">
-				<p>&copy; 2020. Todos los derechos reservados. <b> Corporación Licania <b></p>
+				<p>&copy; 2021. Todos los derechos reservados. <b> Corporación Licania <b></p>
 			</div>
 		</div>
 	</footer>
@@ -355,131 +336,131 @@
 	    elements: [
 	        {
 	            'href': 'img/digital/1.JPG',
-	            'type': 'image', 
+	            'type': 'image',
 	        },
 	         {
 	            'href': 'img/digital/2.JPG',
-	            'type': 'image', 
+	            'type': 'image',
 	        },
 	         {
 	            'href': 'img/digital/3.JPG',
-	            'type': 'image', 
+	            'type': 'image',
 	        },
 	         {
 	            'href': 'img/digital/4.JPG',
-	            'type': 'image', 
+	            'type': 'image',
 	        },
 	          {
 	            'href': 'img/digital/5.JPG',
-	            'type': 'image', 
+	            'type': 'image',
 	        },
 	          {
 	            'href': 'img/digital/6.JPG',
-	            'type': 'image', 
+	            'type': 'image',
 	        },
 	          {
 	            'href': 'img/digital/7.JPG',
-	            'type': 'image', 
+	            'type': 'image',
 	        },
 	          {
 	            'href': 'img/digital/8.JPG',
-	            'type': 'image', 
+	            'type': 'image',
 	        },
 	        {
 	            'href': 'img/digital/9.JPG',
-	            'type': 'image', 
+	            'type': 'image',
 	        },
 	        {
 	            'href': 'img/digital/10.JPG',
-	            'type': 'image', 
+	            'type': 'image',
 	        },
 	        {
 	            'href': 'img/digital/11.JPG',
-	            'type': 'image', 
+	            'type': 'image',
 	        },
 	        {
 	            'href': 'img/digital/12.JPG',
-	            'type': 'image', 
+	            'type': 'image',
 	        },
 	        {
 	            'href': 'img/digital/13.JPG',
-	            'type': 'image', 
+	            'type': 'image',
 	        },
 	        {
 	            'href': 'img/digital/14.JPG',
-	            'type': 'image', 
+	            'type': 'image',
 	        },
 	        {
 	            'href': 'img/digital/15.JPG',
-	            'type': 'image', 
+	            'type': 'image',
 	        },
 	        {
 	            'href': 'img/digital/16.JPG',
-	            'type': 'image', 
+	            'type': 'image',
 	        },
 	        {
 	            'href': 'img/digital/17.JPG',
-	            'type': 'image', 
+	            'type': 'image',
 	        },
 	        {
 	            'href': 'img/digital/18.JPG',
-	            'type': 'image', 
+	            'type': 'image',
 	        },
 	        {
 	            'href': 'img/digital/19.JPG',
-	            'type': 'image', 
+	            'type': 'image',
 	        },
 	        {
 	            'href': 'img/digital/20.JPG',
-	            'type': 'image', 
+	            'type': 'image',
 	        },
 	        {
 	            'href': 'img/digital/21.JPG',
-	            'type': 'image', 
+	            'type': 'image',
 	        },
 	        {
 	            'href': 'img/digital/22.JPG',
-	            'type': 'image', 
+	            'type': 'image',
 	        },
 	        {
 	            'href': 'img/digital/23.JPG',
-	            'type': 'image', 
+	            'type': 'image',
 	        },
 	        {
 	            'href': 'img/digital/24.JPG',
-	            'type': 'image', 
+	            'type': 'image',
 	        },
 	        {
 	            'href': 'img/digital/25.JPG',
-	            'type': 'image', 
+	            'type': 'image',
 	        },
 	        {
 	            'href': 'img/digital/26.JPG',
-	            'type': 'image', 
+	            'type': 'image',
 	        },{
 	            'href': 'img/digital/27.JPG',
-	            'type': 'image', 
+	            'type': 'image',
 	        },{
 	            'href': 'img/digital/28.JPG',
-	            'type': 'image', 
+	            'type': 'image',
 	        },{
 	            'href': 'img/digital/29.JPG',
-	            'type': 'image', 
+	            'type': 'image',
 	        },{
 	            'href': 'img/digital/30.JPG',
-	            'type': 'image', 
+	            'type': 'image',
 	        },{
 	            'href': 'img/digital/31.JPG',
-	            'type': 'image', 
+	            'type': 'image',
 	        },{
 	            'href': 'img/digital/32.JPG',
-	            'type': 'image', 
+	            'type': 'image',
 	        },{
 	            'href': 'img/digital/33.JPG',
-	            'type': 'image', 
+	            'type': 'image',
 	        },{
 	            'href': 'img/digital/34.JPG',
-	            'type': 'image', 
+	            'type': 'image',
 	        },
 
 	        {
@@ -499,7 +480,7 @@
 	            'source': 'youtube', //vimeo, youtube or local
 	            'width': 900,
 	            'title': 'Juan Corrales Jazz Group',
-	            'description': 'Primer concierto de la segunda edición de ALTIPLANO Festival de Jazz del Oriente, en el marco de "Licania: Sala de Conciertos Digital', 
+	            'description': 'Primer concierto de la segunda edición de ALTIPLANO Festival de Jazz del Oriente, en el marco de "Licania: Sala de Conciertos Digital',
 	        },
 
 	        {
@@ -508,25 +489,25 @@
 	            'source': 'youtube', //vimeo, youtube or local
 	            'width': 900,
 	            'title': 'Sofía Giraldo Cardona - Solísta',
-	            'description': 'Hoy en el segundo concierto de nuestra sala presentamos a la talentosa cantautora rionegrera Sofia Giraldo, quien nos llevará en un viaje por el Bossa nova de Tom Jobim y las letras de sus propias composiciones', 
+	            'description': 'Hoy en el segundo concierto de nuestra sala presentamos a la talentosa cantautora rionegrera Sofia Giraldo, quien nos llevará en un viaje por el Bossa nova de Tom Jobim y las letras de sus propias composiciones',
 	        },
-		    
+
 		{
 	            'href': 'https://youtu.be/XGpUV8_7W-k',
 	            'type': 'video',
 	            'source': 'youtube', //vimeo, youtube or local
 	            'width': 900,
 	            'title': 'De Chonta Música Colombiana',
-	            'description': 'En el tercer concierto de nuestra sala presentamos a De Chonta, agrupación del municipio de El Retiro, con sonidos colombianos, melodías e improvisaciones que se entremezclan entre las sonoridades tradicionales y modernas', 
+	            'description': 'En el tercer concierto de nuestra sala presentamos a De Chonta, agrupación del municipio de El Retiro, con sonidos colombianos, melodías e improvisaciones que se entremezclan entre las sonoridades tradicionales y modernas',
 	        },
-		    
+
 		{
 	            'href': 'https://youtu.be/_PmiiVfUOAs',
 	            'type': 'video',
 	            'source': 'youtube', //vimeo, youtube or local
 	            'width': 900,
 	            'title': 'Ensamble Licania',
-	            'description': 'En nuestro cuarto episodio de Licania: Sala de Conciertos Digital, tenemos a un grupo de músicos del Municipio de Marinilla, el ensamble de Jazz de la Corporación Licania', 
+	            'description': 'En nuestro cuarto episodio de Licania: Sala de Conciertos Digital, tenemos a un grupo de músicos del Municipio de Marinilla, el ensamble de Jazz de la Corporación Licania',
 	        },
 		{
 	            'href': 'https://youtu.be/qliZfQVo6fk',
@@ -534,52 +515,52 @@
 	            'source': 'youtube', //vimeo, youtube or local
 	            'width': 900,
 	            'title': 'Orquesta de Cuerdas Frotadas de Marinilla',
-	            'description': 'En nuestro quinto episodio de Licania: Sala de Conciertos Digital, el primer concierto del Festival Encuentro de Cuerdas Frotadas, la Orquesta de Cuerdas Frotadas de la escuela de música Luis Carlos García', 
-	        },    
-   		
+	            'description': 'En nuestro quinto episodio de Licania: Sala de Conciertos Digital, el primer concierto del Festival Encuentro de Cuerdas Frotadas, la Orquesta de Cuerdas Frotadas de la escuela de música Luis Carlos García',
+	        },
+
 		{
 	            'href': 'https://youtu.be/BGoXNFHAAcg',
 	            'type': 'video',
 	            'source': 'youtube', //vimeo, youtube or local
 	            'width': 900,
 	            'title': 'Orquesta de Cuerdas Frotadas de Rionegro',
-	            'description': 'En nuestro sexto episodio de Licania: Sala de Conciertos Digital, el segundo concierto del Festival Encuentro de Cuerdas Frotadas, la Orquesta de Cuerdas Frotadas de la escuela de música Luis Carlos García', 
-	        }, 
-		    
+	            'description': 'En nuestro sexto episodio de Licania: Sala de Conciertos Digital, el segundo concierto del Festival Encuentro de Cuerdas Frotadas, la Orquesta de Cuerdas Frotadas de la escuela de música Luis Carlos García',
+	        },
+
 		{
 	            'href': 'https://youtu.be/ZIvAoMMMAo4',
 	            'type': 'video',
 	            'source': 'youtube', //vimeo, youtube or local
 	            'width': 900,
 	            'title': 'Grupo de Cámara Tahamí',
-	            'description': 'Desde la réplica del viejo Peñol, en esta edición de nuestra Sala de Conciertos Digital nos acompaña el Grupo de Cámara Tahamí del municipio de El Peñol.', 
-	        }, 
-		    
+	            'description': 'Desde la réplica del viejo Peñol, en esta edición de nuestra Sala de Conciertos Digital nos acompaña el Grupo de Cámara Tahamí del municipio de El Peñol.',
+	        },
+
 		{
 	            'href': 'https://youtu.be/FhjS5sGeDx4',
 	            'type': 'video',
 	            'source': 'youtube', //vimeo, youtube or local
 	            'width': 900,
 	            'title': 'Viento Sur Ensamble',
-	            'description': 'En la clausura de nuestra Sala de Conciertos nos acompaña Viento Sur Ensamble. Este cuarteto de cuerdas frotadas nos transporta por la geografía colombiana a través de un viaje por diferentes ritmos y sonoridades musicales.', 
-	        },     
+	            'description': 'En la clausura de nuestra Sala de Conciertos nos acompaña Viento Sur Ensamble. Este cuarteto de cuerdas frotadas nos transporta por la geografía colombiana a través de un viaje por diferentes ritmos y sonoridades musicales.',
+	        },
 		{
 	            'href': 'https://youtu.be/HR3l392EjF0',
 	            'type': 'video',
 	            'source': 'youtube', //vimeo, youtube or local
 	            'width': 900,
 	            'title': 'Jam Session virtual',
-	            'description': 'Estos talentosos músicos del Oriente se animaron a improvisar con la agrupación De Chonta. Este es el ensamble virtual de Altiplano Festival de Jazz del Oriente, en nuestra Sala de Conciertos Digital.', 
-	        }, 	    
+	            'description': 'Estos talentosos músicos del Oriente se animaron a improvisar con la agrupación De Chonta. Este es el ensamble virtual de Altiplano Festival de Jazz del Oriente, en nuestra Sala de Conciertos Digital.',
+	        },
 		{
 	            'href': 'https://youtu.be/j7nEAKWI2ec',
 	            'type': 'video',
 	            'source': 'youtube', //vimeo, youtube or local
 	            'width': 900,
 	            'title': 'Ensamble virtual de Cuerdas Frotadas',
-	            'description': 'Diferentes músicos del Oriente Antioqueño nos encontramos en torno a las cuerdas frotadas. Escucha esta hermosa composición de nuestro gran amigo Santiago Acevedo Castro.', 
-	        }, 
-		    
+	            'description': 'Diferentes músicos del Oriente Antioqueño nos encontramos en torno a las cuerdas frotadas. Escucha esta hermosa composición de nuestro gran amigo Santiago Acevedo Castro.',
+	        },
+
 	        {
 	            'content': document.getElementById('inline-example') // this will append a node inside the slide
 	        },
@@ -588,8 +569,9 @@
 		});
 		myGallery.open();
  	</script>
-		
-	<script src="modal.js"></script>
-	
+
+	<!-- <script src="modal.js"></script> -->
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="menu.js"></script>
 </body>
 </html>
