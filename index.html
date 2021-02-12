@@ -7,7 +7,8 @@
 
 	<link rel="shortcut icon" href="img/logo.ico">
 	<link rel="stylesheet" href="css/estilos.css" type="text/css">
-	<!-- <link rel="stylesheet" href="css/estilos.css" type="text/css">  -->
+	<link rel="stylesheet" href="css/fonts.css" type="text/css">
+	<link rel="stylesheet" href="css/menu.css" type="text/css">
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-157163570-1"></script>
@@ -29,6 +30,7 @@
 
 	<header>
 
+	<!-- MODAL -->
 	<div class="modal-container">
 		<div class="modal modal-close">
 			<p class="close">X</p>
@@ -45,23 +47,38 @@
 	<div class="slider">
 
 		<div class="logo-banner">
-			<img class="logo" src="img/LicaniaLogoWhite.png" alt="Licania Logo">
+			<!-- <img class="logo" src="img/LicaniaLogoWhite.png" alt="Licania Logo"> -->
 			<h1>Corporación Licania</h1>
-			<div class="inscripciones">
+
+			<!-- <div class="inscripciones">
 				<h2>Estamos en inscripciones</h2>
 				<a href="https://forms.gle/tauLKVTXvTBpL3CQ8" target="_blank">
 					<button type="button" class="licania-btn inscripciones-btn">Inscríbete aquí</button>
 				</a>
-			</div>
-
+			</div> -->
 
 		</div>
 
+		<!-- MENU RESPONSIVE-->
+		<div class="menu_bar">
+			<a href="#" class="btn-menu"><span class="icon-bars"></span>Menú</a>
+		</div>
+		<nav class="nav-bar">
+			<ul>
+				<li><a href="index.html" class="logo-icon"><span class="icon-LicaniaLogo"></span></a></li>
+				<li><a href="https://forms.gle/tauLKVTXvTBpL3CQ8" target="_blank" class="icon"><span class="icon-clipboard"></span>Inscripciones</a></li>
+				<li><a href="#" class="icon"><span class="icon-briefcase"></span>La Corporación</a></li>
+				<li><a href="digital.html" class="icon"><span class="icon-music"></span>Sala de Conciertos</a></li>
+				<li><a href="#" class="icon"><span class="icon-calendar"></span>Eventos</a></li>
+				<li><a href="#" class="icon"><span class="icon-file-text2"></span>Blog</a></li>
+			</ul>
+		</nav>
+
+
+
 		<figure>
 			<img src="img/Banner7.jpg" alt="Imagen Corporación Licania">
-			<a href="digital.html">
-				<img src="img/sala-banner1.jpg" alt="Sala de Conciertos Digital">
-			</a>
+			<img src="img/sala-banner1.jpg" alt="Sala de Conciertos Digital">
 			<img src="img/Banner6.jpg" alt="Imagen Corporación Licania">
 			<img src="img/Banner4.jpg" alt="Imagen Corporación Licania">
 			<img src="img/Banner2.jpg" alt="Imagen Corporación Licania">
@@ -120,7 +137,7 @@
 						<p>
 							Nuestra sede cuenta con tres espacios para la formación artística y una pequeña sala-teatrino con capacidad para aproximadamente 70 personas, donde se han presentando varias agrupaciones y artístas de la región.
 						</p>
-						
+
 					</section>
 				</section>
 
@@ -301,7 +318,7 @@
 			</main>
 
 
-	<script src="modal.js"></script>
+	<!-- <script src="modal.js"></script> -->
 
 	<footer>
 			<img src="img/LicaniaLogo.png" alt="Licania logo">
@@ -341,7 +358,8 @@
 	</div>
 	</footer>
 
-
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="menu.js"></script>
 </body>
 </html>
 
