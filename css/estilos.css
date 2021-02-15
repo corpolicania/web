@@ -1342,6 +1342,21 @@ footer .slogan {
     max-width: 100%;
     width: auto;
   }
+
+  .social {
+    display: none;
+  }
+
+  img {
+    max-width: 90%;
+  }
+
+  .altiplano-video {
+      max-width: 90%;
+      width: 600px;
+      height: auto;
+  }
+
 }
 @media screen and (max-width: 480px) {
   .modal h2 {
