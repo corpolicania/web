@@ -89,6 +89,13 @@ header nav ul li span {
     background: #ccc;
     left: 5%;
   }
+/* 
+  .menu_bar a::before {
+    font-family: 'icomoon' !important;
+    content: "\e900";
+    padding: 0px 15px;
+    font-size: 30px;
+  } */
 
   .menu_bar .btn-menu {
     display: block;
