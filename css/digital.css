@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #212121;
+  /* background: #212121; */
 }
 
 .logo-sala {
@@ -44,8 +44,7 @@ body {
 }
 
 .little-nav-bar li a:hover {
-  background: #fff;
-  color: #212121;
+  background: #212121;
 }
 
 .little-nav-bar li a::before {
@@ -65,18 +64,18 @@ body {
 }
 
 #sala-videos {
-  color: #fff;
+  color: #212121;
   margin: 10px 8%;
   padding: 20px;
-  border: 1px solid white;
+  border: 1px solid #212121;
   display: inherit;
 }
 
 #sala-podcast {
-  color: yellow;
+  color: blue;
   margin: 10px 8%;
   padding: 20px;
-  border: 1px solid yellow;
+  border: 1px solid blue;
   display: none;
 }
 
