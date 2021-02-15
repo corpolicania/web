@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #212121;
+}
+
+.logo-sala {
+  margin-top: 120px;
+  max-width: 30%;
+  position: relative;
+  left: 35%;
+  right: 35%;
+  margin-bottom: 40px;
+}
+
+.little-nav-bar {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  width: 100%;
+  background-color: #008993;
+  display: grid;
+  margin-bottom: 30px;
+}
+
+.little-nav-bar ul {
+  display: block;
+  list-style: none;
+  /* margin-top: 0; */
+  /* margin-bottom: 0; */
+  margin: 0 auto;
+}
+
+.little-nav-bar ul li {
+  float: left;
+}
+
+.little-nav-bar ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+}
+
+.little-nav-bar li a:hover {
+  background: #fff;
+  color: #212121;
+}
+
+.little-nav-bar li a::before {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+  content: "|";
+  padding-right: 20px;
+}
+
+.little-nav-bar li a::after {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+  content: "|";
+  padding-left: 20px;
+}
+
+#sala-videos {
+  color: #fff;
+  margin: 10px 8%;
+  padding: 20px;
+  border: 1px solid white;
+  display: inherit;
+}
+
+#sala-podcast {
+  color: yellow;
+  margin: 10px 8%;
+  padding: 20px;
+  border: 1px solid yellow;
+  display: none;
+}
+
+#sala-fotos {
+  color: red;
+  margin: 10px 8%;
+  padding: 20px;
+  border: 1px solid red;
+  display: none;
+}
+
+/* --------------------- RESPONSIVE --------------------- */
+@media screen and (max-width: 1150px) {
+  .logo-sala {
+    margin-top: 180px;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .logo-sala {
+    max-width: 60%;
+    left: 20%;
+    right: 20%;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .little-nav-bar ul{
+    display: inherit;
+  }
+
+
+}
