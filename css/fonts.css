@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/fonts/icomoon.eot?6pg2fp');
-  src:  url('../fonts/fonts/icomoon.eot?6pg2fp#iefix') format('embedded-opentype'),
-    url('../fonts/fonts/icomoon.ttf?6pg2fp') format('truetype'),
-    url('../fonts/fonts/icomoon.woff?6pg2fp') format('woff'),
-    url('../fonts/fonts/icomoon.svg?6pg2fp#icomoon') format('svg');
+  src:  url('../fonts/fonts/icomoon.eot?zcgk7u');
+  src:  url('../fonts/fonts/icomoon.eot?zcgk7u#iefix') format('embedded-opentype'),
+    url('../fonts/fonts/icomoon.ttf?zcgk7u') format('truetype'),
+    url('../fonts/fonts/icomoon.woff?zcgk7u') format('woff'),
+    url('../fonts/fonts/icomoon.svg?zcgk7u#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -32,6 +32,9 @@
   content: "\e900";
   color: #fff;
 }
+.icon-camera:before {
+  content: "\e90f";
+}
 .icon-music:before {
   content: "\e911";
 }
@@ -46,4 +49,10 @@
 }
 .icon-clipboard:before {
   content: "\e9b8";
+}
+.icon-spotify:before {
+  content: "\ea94";
+}
+.icon-youtube:before {
+  content: "\ea9d";
 }
