@@ -1,15 +1,15 @@
 body {
   margin: 0;
   padding: 0;
-  /* background: #212121; */
+  font-family: 'Raleway', sans-serif;
 }
 
 .logo-sala {
   margin-top: 120px;
-  max-width: 30%;
+  max-width: 20%;
   position: relative;
-  left: 35%;
-  right: 35%;
+  left: 40%;
+  right: 40%;
   margin-bottom: 40px;
 }
 
@@ -19,14 +19,12 @@ body {
   width: 100%;
   background-color: #008993;
   display: grid;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .little-nav-bar ul {
   display: block;
   list-style: none;
-  /* margin-top: 0; */
-  /* margin-bottom: 0; */
   margin: 0 auto;
 }
 
@@ -63,29 +61,275 @@ body {
   padding-left: 20px;
 }
 
-#sala-videos {
-  color: #212121;
-  margin: 10px 8%;
-  padding: 20px;
-  border: 1px solid #212121;
-  display: inherit;
+.icon-youtube:after, .icon-spotify:after, .icon-camera:after {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  padding: 8px;
 }
 
-#sala-podcast {
-  color: blue;
-  margin: 10px 8%;
+.icon-youtube:after {
+  content:'Videos';
+}
+
+.icon-spotify:after {
+  content: 'Podcast';
+}
+
+.icon-camera:after {
+  content: 'Regístro Fotográfico';
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+
+ h2 {
+   font-family: 'Raleway', sans-serif;
+   font-weight: 900;
+   /* color: #008993; */
+   text-align: center;
+ }
+
+#sala-videos {
+  color: #212121;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 1200px;
+  margin-bottom: 20px;
   padding: 20px;
-  border: 1px solid blue;
+  /* border: 1px solid #212121; */
+  display: inherit;
+  text-align: justify;
+}
+
+
+#sala-podcast {
+  color: #212121;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 1200px;
+  margin-bottom: 20px;
+  padding: 20px;
+  /* border: 1px solid blue; */
   display: none;
+  text-align: justify;
 }
 
 #sala-fotos {
-  color: red;
-  margin: 10px 8%;
-  padding: 20px;
-  border: 1px solid red;
+  color: #212121;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 1200px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  /* border: 1px solid red; */
   display: none;
+  text-align: justify;
 }
+
+/* ------------------------------------- THE LIGHTBOX ------------------------------------- */
+
+.container-grid-vid {
+  display: grid;
+  height: 150vh;
+  grid-template-columns: repeat(5, 1fr);
+  /* grid-template-rows: repeat(5, 1fr); */
+  grid-template-areas:
+  "vid1 vid1 vid2 vid2 vid2"
+  "vid1 vid1 vid2 vid2 vid2"
+  "vid4 vid4 vid4 vid3 vid3"
+  "vid4 vid4 vid4 vid3 vid3"
+  "vid5 vid6 vid7 vid8 vid8"
+  "vid5 vid6 vid7 vid8 vid8"
+  "vid9 vid9 vid10 vid10 vid10"
+  "vid9 vid9 vid10 vid10 vid10";
+  gap: 15px;
+}
+
+.vid {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vid:hover {
+  filter: grayscale(50%);
+  cursor: pointer;
+  transition: filter .5s;
+}
+
+.vid-1 {
+  grid-area: vid1;
+}
+.vid-2 {
+  grid-area: vid2;
+}
+.vid-3 {
+  grid-area: vid3;
+}
+.vid-4 {
+  grid-area: vid4;
+}
+.vid-5 {
+  grid-area: vid5;
+}
+.vid-6 {
+  grid-area: vid6;
+}
+.vid-7 {
+  grid-area: vid7;
+}
+.vid-8 {
+  grid-area: vid8;
+}
+.vid-9 {
+  grid-area: vid9;
+}
+.vid-10 {
+  grid-area: vid10;
+}
+
+.container-grid-podcast {
+  display: grid;
+  height: 105h;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+  "pod1 pod2"
+  "pod3 pod4"
+  "pod5 pod5";
+  grid-gap: 10px;
+}
+
+.podcast {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.podcast-1 {
+  grid-area: pod1;
+}
+.podcast-2 {
+  grid-area: pod2;
+}
+.podcast-3 {
+  grid-area: pod3;
+}
+.podcast-4 {
+  grid-area: pod4;
+}
+.podcast-5 {
+  grid-area: pod5;
+}
+
+
+.container-grid {
+  display: grid;
+  height: 80vh;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+  "img1 img2 img3 img3 img3"
+  "img1 img2 img3 img3 img3"
+  "img4 img4 img3 img3 img3"
+  "img4 img4 img3 img3 img3"
+  "img6 img6 img5 img5 img5"
+  "img6 img6 img5 img5 img5";
+  gap: 5px;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img:hover {
+  filter: grayscale(50%);
+  cursor: pointer;
+  transition: filter .5s;
+}
+.img-1 {
+  grid-area: img1;
+}
+
+.img-2 {
+  grid-area: img2;
+}
+
+.img-3 {
+  grid-area: img3;
+}
+
+.img-4 {
+  grid-area: img4;
+}
+
+.img-5 {
+  grid-area: img5;
+}
+
+.img-6 {
+  grid-area: img6;
+}
+
+.container-img {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform .4s ease-in;
+}
+
+.move {
+  transform: translateX(0);
+}
+
+.img-show {
+  transform: scale(0);
+  height: 80%;
+  /* height: auto; */
+  display: block;
+  object-fit: cover;
+  transition: transform .2s .4s;
+}
+
+.show {
+  transform: scale(1);
+}
+
+.copy {
+  position: fixed;
+  color: #fff;
+  bottom: 40px;
+}
+
+.bx.bx-x {
+  position: absolute;
+  color: white;
+  top: 20px;
+  right: 10px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+
+
 
 /* --------------------- RESPONSIVE --------------------- */
 @media screen and (max-width: 1150px) {
@@ -102,12 +346,62 @@ body {
     right: 20%;
     margin-top: 50px;
   }
-}
-
-@media screen and (max-width: 635px) {
-  .little-nav-bar ul{
-    display: inherit;
+  .img-show {
+    height: auto;
   }
 
+  .container-grid-vid {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+    "vid1 vid2"
+    "vid3 vid4"
+    "vid5 vid6"
+    "vid7 vid8"
+    "vid9 vid10";
+  }
+
+  .container-grid-podcast {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+    "pod1"
+    "pod2"
+    "pod3"
+    "pod4"
+    "pod5";
+  }
+
+  .container-grid {
+    grid-template-columns: 50% 50%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    "img1 img2"
+    "img3 img4"
+    "img5 img6";
+  }
+
+  .img-show {
+    width: 90%;
+  }
+  .copy {
+    bottom: 20px;
+  }
+
+  .bx.bx-x {
+    top: 10px;
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .icon-youtube:after, .icon-spotify:after, .icon-camera:after {
+    content: '';
+    padding: 0;
+    margin: auto;
+  }
 
 }
