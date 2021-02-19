@@ -328,8 +328,32 @@ p {
   cursor: pointer;
 }
 
+/* PATROCINIOS */
 
+.patrocinio {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
 
+#slider {
+  width: 2000px;
+  height: 150px;
+
+  background-image: url('../img/patrocinadores.png');
+  background-size: 100% 100%;
+
+  animation: slider 30s infinite linear;
+
+  border: 1px solid #212121;
+  margin-bottom: 20px;
+}
+
+@keyframes slider {
+  to {
+    background-position: 2000px;
+  }
+}
 
 /* --------------------- RESPONSIVE --------------------- */
 @media screen and (max-width: 1150px) {
