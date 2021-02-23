@@ -666,6 +666,7 @@ body {
   overflow: hidden;
 }
 .slider figure {
+  object-fit: cover;
   position: relative;
   width: 500%;
   margin: 0;
@@ -676,7 +677,9 @@ body {
   animation: 32s slidy infinite;
 }
 .slider figure img {
+  object-fit: cover;
   width: 20%;
+  max-height: 80vh;
   float: left;
 }
 .slider-text-form {
@@ -1306,6 +1309,13 @@ footer .slogan {
   }
 }
 @media screen and (max-width: 768px) {
+  img.frotadas-txt {
+    max-width: 90%;
+  }
+
+  iframe {
+    max-width: 90%;
+  }
   .modal h2 {
 		font-size: 1em;
 	}
@@ -1334,7 +1344,7 @@ footer .slogan {
     float: none;
   }
   .frotadas-txt img {
-    width: 90%;
+    max-width: 90%;
   }
 }
 @media screen and (max-width: 635px) {
@@ -1378,9 +1388,9 @@ footer .slogan {
     height: auto;
   }
   .altiplano-video iframe {
-    max-width: 100%;
+    max-width: 90vw;
   }
   .frotadas-img img {
-    max-width: 100%;
+    max-width: 90vw;
   }
 }

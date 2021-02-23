@@ -1,0 +1,245 @@
+
+.one-slider {
+  overflow: hidden;
+}
+
+.one-slider figure {
+  object-fit: cover;
+  position: relative;
+  max-width: 100vw;
+  max-height: 80vh;
+  margin: 0;
+  left: 0;
+}
+
+.one-slider figure img {
+  width: 100%;
+  max-width: 100vw;
+}
+
+.section-title {
+  font-family: 'Open Sans', sans-serif;
+  /* text-align: center; */
+  font-weight: 800;
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 0.3em;
+}
+
+
+.little-nav-bar {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  /* max-width: 100%; */
+  background-color: #f6b50c;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.little-nav-bar ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.little-nav-bar li a {
+  float: right;
+  width: 103.5%;
+}
+
+.escuela-btn {
+  float: right;
+  width: 100%;
+}
+
+.equipo-btn {
+  float: left;
+  width: 100%;
+}
+
+.little-nav-bar ul li a {
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  display: block;
+}
+
+.little-nav-bar li a:hover {
+  color: #fff;
+  background: #212121;
+}
+
+#escuela {
+  display: inherit;
+}
+
+#equipo {
+  display: none;
+}
+
+ h3 {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-weight: black;
+  font-size: 1.2em;
+  color: #008993;
+  margin-bottom: 0.3em;
+}
+
+.ancho {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+}
+section {
+  margin: 20px;
+}
+
+.equipo section{
+  margin: auto;
+}
+.escuela {
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.proyeccion-desc {
+  text-align: justify;
+}
+
+.equipo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* PERFILES */
+.perfil {
+  width: 90%;
+  padding: 10px;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+  "foto info info ";
+}
+
+.perfil-info {
+  text-align: justify;
+  grid-area: info;
+}
+
+.perfil-foto {
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: auto;
+  /* object-fit: cover; */
+  border-radius: 50%;
+  width: 90%;
+  grid-area: foto;
+}
+
+.perfil-name {
+  text-align: justify;
+  grid-area: name;
+}
+
+.perfil-rol {
+  font-style: italic;
+  font-weight: 300;
+  color: rgba(0, 0, 0, .75);
+  grid-area: rol;
+}
+
+.perfil-descripcion {
+  color: #212121;
+  grid-area: descripcion;
+}
+
+/* ------------------------------- RESPONSIVE-------------------------------  */
+@media screen and (max-width: 1024px) {
+  .formacion-vid {
+    grid-area: formacion-vid;
+  }
+  .formacion-desc {
+    grid-area: formacion-desc;
+  }
+  .pulsadas-vid {
+    grid-area: pulsadas-vid;
+  }
+  .pulsadas-desc {
+    grid-area: pulsadas-desc;
+  }
+  .kinnara-vid {
+    grid-area: kinnara-vid;
+  }
+  .kinnara-desc {
+    grid-area: kinnara-desc;
+  }
+  .frotadas-vid {
+    grid-area: frotadas-vid;
+  }
+  .frotadas-desc {
+    grid-area: frotadas-desc;
+  }
+
+  iframe{
+    max-width: 90%;
+  }
+
+  .proyeccion-desc {
+    max-width: 90%;
+  }
+  .escuela {
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "formacion-desc"
+    "formacion-vid"
+    "pulsadas-desc"
+    "pulsadas-vid"
+    "kinnara-desc"
+    "kinnara-vid"
+    "frotadas-desc"
+    "frotadas-vid";
+  }
+
+  .little-nav-bar li a {
+    width: 110%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .equipo {
+    grid-template-columns: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .perfil {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "foto"
+    "info";
+  }
+  .perfil-foto {
+    max-width: 50%;
+  }
+   .perfil-name {
+     text-align: center;
+   }
+  .perfil-info {
+    text-align: center;
+  }
+  .little-nav-bar li a {
+    float: right;
+    width: 115%;
+    /* border: 1px solid red; */
+  }
+}
