@@ -4,6 +4,7 @@ let equipo_btn = document.querySelectorAll(".equipo-btn")[0]
 let escuela_div = document.getElementById('escuela')
 let equipo_div = document.getElementById('equipo')
 
+escuela_btn.style.background = "#212121"
 
 escuela_btn.addEventListener("click", function() {
   escuela_btn.style.background = "#212121"

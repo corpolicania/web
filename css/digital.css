@@ -4,16 +4,26 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-.logo-sala {
-  margin-top: 120px;
-  max-width: 20%;
+.one-slider {
+  overflow: hidden;
+}
+
+.one-slider figure {
+  object-fit: cover;
   position: relative;
-  left: 40%;
-  right: 40%;
-  margin-bottom: 40px;
+  max-width: 100vw;
+  max-height: 65vh;
+  margin: 0;
+  left: 0;
+}
+
+.one-slider figure img {
+  width: 100%;
+  max-width: 100vw;
 }
 
 .little-nav-bar {
+  margin-top: 25px;
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   width: 100%;
