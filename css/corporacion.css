@@ -93,7 +93,15 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  max-width: 1200px;
+  max-width: 80%;
+  margin: auto;
+}
+
+.justificado {
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  max-width: 60%;
   margin: auto;
 }
 section {
@@ -220,6 +228,10 @@ section {
 }
 
 @media screen and (max-width: 500px) {
+  .justificado {
+    max-width: 90%;
+  }
+
   .perfil {
     grid-template-columns: 100%;
     grid-template-rows: repeat(2, 1fr);
