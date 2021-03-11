@@ -162,7 +162,6 @@ li.grid a {
   /* Hover */
 
   .facebook:hover {
-    border: 1px solid red;
     background: #3b5998;
   }
   .whatsapp:hover {
