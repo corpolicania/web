@@ -364,6 +364,14 @@ body {
   transform: scale(1.2);
   background: #3b5998;
 }
+
+.social ul li.whatsapp a:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  background: #25D366;
+}
+
 .social ul li.instagram a:hover {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);

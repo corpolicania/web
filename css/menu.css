@@ -45,7 +45,7 @@ header nav ul li a {
   cursor: pointer;
 }
 
-header nav ul li a:hover {
+header nav .nav-bar ul li a:hover {
   background: #008993;
 }
 
@@ -59,7 +59,9 @@ header nav ul li span {
   font-size: 20px;
 }
 
-
+.social-menu {
+  display: none;
+}
 
  /* ------------------------------- RESPONSIVE -------------------------------  */
  @media screen and (max-width: 1024px) {
@@ -90,6 +92,11 @@ header nav ul li span {
   header nav ul li {
     display: block;
     float: none;
+  }
+
+  header nav .nav-bar ul li {
+    display: block;
+    float: none;
     border-bottom: 1px solid rgba(255, 255, 255, .3);
   }
 
@@ -103,13 +110,6 @@ header nav ul li span {
     background: #ccc;
     left: 5%;
   }
-/*
-  .menu_bar a::before {
-    font-family: 'icomoon' !important;
-    content: "\e900";
-    padding: 0px 15px;
-    font-size: 30px;
-  } */
 
   .menu_bar .btn-menu {
     display: block;
@@ -135,4 +135,47 @@ header nav ul li span {
     font-size: 20px;
     padding: 8px;
   }
+
+  .social-menu{
+    display: block;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .social-menu img {
+    max-width: 80%;
+    width: 50px;
+  }
+
+li.grid a {
+  margin-top: 50%;
+
+}
+  header nav ul li.grid img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Hover */
+
+  .facebook:hover {
+    border: 1px solid red;
+    background: #3b5998;
+  }
+  .whatsapp:hover {
+    background: #25D366;
+  }
+  .instagram:hover {
+    background: linear-gradient(45deg, #F09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  }
+  .youtube:hover {
+    background: #da2d2e;
+  }
+  .maps:hover {
+    background: #ffd04b;
+  }
+
 }
