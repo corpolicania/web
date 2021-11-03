@@ -1,0 +1,128 @@
+body {
+     margin: 0;
+     background-image: url("../img/textura.png");
+     background-size: cover;
+     font-family: 'raleway', sans-serif;
+}
+.container-cre {
+     width: 1000px;
+     height: 100vh;
+     display: grid;
+     grid-template-rows: 20% 20% 60%;
+     grid-template-areas: 
+     "sello"
+     "mincultura"
+     "creditos";
+     position: relative;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+.container {
+     width: 1000px;
+     height: 100vh;
+     display: grid;
+     grid-template-rows: 5% 15% 80%;
+     grid-template-areas: 
+     "title"
+     "tolkien"
+     "presentacion";
+     position: relative;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+.creanto-sello {
+     position: absolute;
+     grid-area: sello;
+     left: 0;
+     right: 0;
+     margin: 0 auto;
+     top: 12vh;
+     max-width: 50%;
+     width: 350px;
+}
+
+.logos {
+     position: relative;
+     left: 0;
+     right: 0;
+     margin: 0 auto;
+     grid-area: mincultura;
+     width: 400px;
+     top: 20vh;
+}
+
+.creditos {
+     position: absolute;
+     left: 0;
+     right: 0;
+     margin: 0 auto;
+     grid-area: creditos;
+     top: 30%;
+     text-align: center;
+}
+
+.title {
+     position: absolute;
+     left: 0;
+     right: 0;
+     margin: 0 auto;
+     text-align: center;
+     font-weight: 800;
+     top: 15vh;
+     grid-area: title;
+
+}
+
+.tolkien{
+     position: relative;
+     left: 0;
+     right: 0;
+     margin: 0 auto;
+     font-weight: 500;
+     font-style: italic;
+     grid-area: presentacion;
+     width: 800px;
+     text-align: justify;
+}
+
+.description {
+     padding: 10px;
+     position: absolute;
+     left: 0;
+     right: 0;
+     margin: 0 auto;
+     font-weight: 400;
+     text-align: justify;
+     top: 35%;
+}
+
+@media screen and (max-width: 1000px) {
+     .container-cre, .container {
+          width: 95%;
+          margin: 5%;
+     }
+     .tolkien {
+          width: 90%;
+          top: -30px;
+     }
+     .descripcion {
+          top: 50vh;
+     }
+     .title {
+          top: 10%;
+     }
+} 
+
+@media screen and (max-width: 500px) {
+     .creanto-sello {
+          top: 5%;
+     }
+     .logos {
+          top: 8%;
+     }
+     .creditos {
+          top: 5%;
+     }
+}

@@ -1,0 +1,42 @@
+.container-btn  {
+     position: absolute;
+     top: 85vh;
+     right: 3%;  
+     position: fixed;
+}
+
+.container-btn button {
+     align-items: center;
+     width: 35px;
+     height: 35px;
+     margin: 5px;
+     border-radius: 50%;
+     background: #008993;
+     color: white;
+     font-family: 'raleway', sans-serif;
+     font-weight: 800;
+     font-size: 1.5em;
+     border: none;
+     cursor: pointer;
+     animation: buttons 3s ease-in-out;
+}
+
+@keyframes buttons {
+     0% { 
+          right: -200px;
+          opacity: 0;
+          transform: translateX(200px);
+     }
+     100% {
+          transform: translateX(0%);
+          opacity: 1;
+     }
+}
+a {
+     text-decoration: none;
+}
+
+.container-btn button:hover {
+     transform: translateY(-5px);
+}
+
