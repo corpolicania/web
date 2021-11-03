@@ -1,0 +1,73 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url("../img/textura.png");
+	background-size: cover;
+	font-family: 'Raleway', sans-serif;
+}
+
+.container {
+	position: relative;
+	height: 110vh;
+}
+.creanto-img {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	height: 80%;
+	width: auto;
+	animation: creanto 2s ease;
+}
+@keyframes creanto {
+	0% {
+		transform: translateY(-100%);
+	} 
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+.mincultura {
+	height: 12vh;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	bottom: auto;
+	bottom: 2%;
+	margin-bottom: 2%;
+	animation: mincultura 1.5s ease;
+	
+}
+
+@keyframes mincultura {
+	0% {
+		transform: translateY(100%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+
+
+@media screen and (max-width: 645px) {
+	.container{
+		height: 100vh;
+	}
+	.creanto-img {
+		height: auto;
+	}
+
+	.mincultura {
+		bottom: 10%;
+		/* transform: scale(.8); */
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.mincultura {
+		bottom: 30vh;
+	}
+}
