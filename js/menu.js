@@ -13,7 +13,7 @@ function main() {
       $('nav').animate({
         left: '0'
       })
-       contador = 0
+      contador = 0
     } else {
       $('nav').animate({
         left: '-100%'

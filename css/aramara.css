@@ -1,0 +1,112 @@
+body {
+    color: #233443;
+    background-image: url("../img/musico-local/textura.png");
+    background-size: cover;
+}
+.portada {
+    background: #233443;
+    height: 85vh;
+}
+.portada-img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center; 
+}
+.intro {
+    width: 1200px;
+    max-width: 90%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 5px auto;
+    text-align: justify;    
+}
+.scuilo-live {
+    max-width: 90%;
+    width: 1200px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center; 
+    top: calc(115vh);
+    margin-bottom: 10px;
+}
+.interview {
+    top: 180vh;
+    width: 1200px;
+    max-width: 90%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 10px auto;
+    text-align: justify;
+}
+.mid-inter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "foto txt";
+    grid-gap: 10px;
+}
+.foto-patio {
+    width: 95%;
+    grid-area: foto;
+    left: 0;
+    right: 0;
+    margin: 10px auto;
+    text-align: center;
+}
+.txt {
+    grid-area: txt;
+}
+.redes-scuilo span {
+    margin: 20px;
+}
+.foto-studio {
+    max-width: 95%; 
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 10px auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 680px) {
+    .portada {
+        width: 100vw;
+        height: 85vw;
+    }
+    .intro, .interview {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 400px) {
+    .scuilo-live {
+        top: 130vh;
+        height: 70%;
+    }
+    .interview {
+        top: 200vh;
+    }
+    
+}
+@media screen and (max-width: 850px) {
+    .mid-inter {
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "foto"
+            "txt";
+    }
+}
+@media screen and (max-width: 400px) {
+    .scuilo-live {
+        top: 135vh;
+        height: 70%;
+    }
+    .interview {
+        top: 205vh;
+    }
+}

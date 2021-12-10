@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    color: #7b221e;
+    background-image: url("../img/musico-local/textura.png");
+    background-color: rgba(255, 208, 93, .5);
+    background-size: cover;
+}
+.editorial h2 {
+    color: #7b221e;
+}
+.editorial {
+    width: 1200px;
+    max-width: 90%;
+    position: absolute;
+    top: 8%;
+    left: 0;
+    right: 0;
+    margin: 20px auto;
+    text-align: justify;
+    
+}
+span.subrayado {
+    text-emphasis-color: #FFD05D;
+}
+
+@media screen and (max-width: 600px) {
+    .editorial {
+        font-size: 20px;
+    }
+}
