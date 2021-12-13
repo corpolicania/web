@@ -1,12 +1,25 @@
-    header nav {
+body {
+    @import: url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital,wght@0,400;0,700;1,400&display=swap');
+    font-family: 'Gentium Book Basic', serif;
+}
+
+header nav {
         position: fixed;
         z-index: 1;
         width: 50%;
         /* background: rgba(33, 33, 33, .8); */
+        
     }
     
     .menu_bar-revista {
         display: block;
+    }
+
+    header .menu_bar-revista a {
+        @import: url('../fonts/Golden_arrow.ttf');
+        font-family: 'Golden Arrow', serif;
+        letter-spacing: 3px;
+        text-align: center;
     }
     
     header nav ul {
@@ -22,6 +35,11 @@
         float: left;
     }
     
+
+    .menu_bar-revista .btn-menu .icon-bars {
+        margin-left: 50px;
+        }
+        
     .logo-icon {
         display: flex;
         align-items: middle;
@@ -38,8 +56,8 @@
         padding: 27px;
         }
     header nav ul li a {
-        font-family: 'Raleway', sans-serif;
-        font-size: 14px;
+        font-family: 'Gentium Book Basic', serif;
+        font-size: 16px;
         color: #fff;
         text-decoration: none;
         display: block;
@@ -60,30 +78,15 @@
         display: none;
     }
     
-    /* ------------------------------- RESPONSIVE -------------------------------  */
-    @media screen and (max-width: 1024px) {
-        header nav ul li a {
-        font-size: 15px;
-        }
-    
-        header nav ul li span {
-        font-size: 15px;
-        }
-    
-        .icon {
-        padding: 20px;
-        }
-    
-    }
     
 
         header nav {
+        top: 60px;
         width: 100%;
         left: -100%;
         background: #902e29;
         height: 100%;
         margin: 0;
-        font-size: 10px;
         }
     
         header nav ul li {
@@ -95,7 +98,8 @@
         display: block;
         float: none;
         border-bottom: 1px solid rgba(255, 255, 255, .3);
-        padding: 20px 0;
+        padding: 10px 0;
+        font-family: 'Gentium Book Basic', serif;
         }
     
         header nav ul li a {
@@ -110,30 +114,29 @@
         }
     
         .menu_bar-revista .btn-menu {
-        display: block;
+        display: block; 
         z-index: 11;
         padding: 20px;
-        background: #212121;
+        background: rgba(33, 33, 33, .9);
+        width: 100%;
+        position: fixed;
         height: 60px;
-        color: white;
+        color: #FFD05D;
         text-decoration: none;
         font-weight: bold;
-        font-size: 15px;
+        font-size: 22px;
         box-sizing: border-box;
+        }
+        
+        .menu_bar-revista .btn-menu :last-child {
+            color: white;
         }
     
         .menu_bar-revista span {
         float: right;
         font-size: 20px;
         }
-    
-        .icon-LicaniaLogo:after {
-        content: '';
-        font-family: 'Raleway', sans-serif;
-        font-size: 20px;
-        padding: 8px;
-        }
-    
+
     li.grid a {
         margin-top: 50%;
     
@@ -143,3 +146,18 @@
         margin-left: auto;
         margin-right: auto;
         }    
+
+        @media screen and (max-width: 1024px) {
+            header nav ul li a {
+            font-size: 15px;
+            }
+        
+            header nav ul li span {
+            font-size: 15px;
+            }
+        
+            .icon {
+            padding: 20px;
+            }
+        
+        }

@@ -5,6 +5,7 @@ var contador = 1
 // contador = 1 es cuando el menu esta Activo
 // contador = 0 es cuando el menu esta Oculto
 
+
 function main() {
     $('.menu_bar-revista').click(function() {
         // $('nav').toggle()
@@ -23,3 +24,4 @@ function main() {
 
     })
 }
+

@@ -1,7 +1,10 @@
 body {
-    color: #7c0909;
+    color: #212121;
     background-image: url("../img/musico-local/textura.png");
     background-size: cover;
+    @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital,wght@0,400;0,700;1,400&display=swap');
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 18px;
 }
 .portada {
     background: #7c0909;
@@ -23,7 +26,7 @@ body {
     margin: 5px auto;
     margin-top: 20px;
     margin-bottom: 0px;
-    text-align: justify;    
+    text-align: left;    
 }
 .scuilo-live {
     max-width: 90%;
@@ -44,7 +47,7 @@ body {
     left: 0;
     right: 0;
     margin: 10px auto;
-    text-align: justify;
+    text-align: left;
 }
 .mid-inter {
     display: grid;

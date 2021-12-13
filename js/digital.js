@@ -73,7 +73,7 @@ closeModal.addEventListener("click", () => {
 
 document.addEventListener("keydown", function (event) {
     if (event.keyCode === 27) {
-    	containerImage.classList.toggle("move")
+      containerImage.classList.toggle("move")
       imageContainer.classList.toggle("show")
     }
 })

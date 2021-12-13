@@ -1,3 +1,7 @@
+body {
+  @import: url('../fonts/golden_arrow.ttf');
+}
+
 header nav {
   position: fixed;
   z-index: 10;
@@ -49,14 +53,9 @@ header nav .nav-bar ul li a:hover {
   background: #008993;
 }
 
-header nav ul li a:active {
-  background: #008993;
-  color: #212121;
-}
-
 header nav ul li span {
   margin-right: 10px;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .social-menu {

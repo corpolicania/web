@@ -1,5 +1,14 @@
+body {
+    @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital,wght@0,400;0,700;1,400&display=swap');
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 18px;
+}
 .portada {
     background: #902e29;
+    padding: 20px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
     height: 90vh;
 }
 .portada-img {
@@ -18,7 +27,6 @@
     text-align: center;
     background-color: #FFD05D;
     width: 100%;
-    padding: 20px;
 }
 
 .revista-logo img {

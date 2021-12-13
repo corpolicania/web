@@ -1,7 +1,10 @@
 body {
-    color: #7b221e;
+    color: #333;
     background-image: url("../img/musico-local/textura.png");
     background-size: cover;
+    @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital,wght@0,400;0,700;1,400&display=swap');
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 18px;
 }
 .portada {
     background: #f4a84e;
@@ -21,7 +24,7 @@ body {
     left: 0;
     right: 0;
     margin: 15px auto;
-    text-align: justify;    
+    text-align: left;    
 }
 .live {
     height: 100vh;
@@ -45,7 +48,7 @@ body {
     left: 0;
     right: 0;
     margin: 10px auto;
-    text-align: justify;
+    text-align: left;
 }
 .mid-inter {
     display: grid;
