@@ -18,6 +18,7 @@ body {
     text-align: center; 
 }
 .intro {
+    display: flex;
     width: 1200px;
     max-width: 90%;
     position: absolute;
@@ -26,9 +27,7 @@ body {
     margin: 15px auto;
     text-align: left;    
 }
-.live {
-    height: 100vh;
-}
+
 .scuilo-live {
     max-width: 90%;
     width: 1200px;

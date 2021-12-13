@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Golden Arrow';
+    src: url('../fonts/golden_arrow.ttf');
+    src: url('../fonts/golden_arrow.otf');
+    font-style: normal;
+    font-display: block;
+}
+
 body {
     @import: url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital,wght@0,400;0,700;1,400&display=swap');
     font-family: 'Gentium Book Basic', serif;
@@ -16,7 +24,8 @@ header nav {
     }
 
     header .menu_bar-revista a {
-        @import: url('../fonts/Golden_arrow.ttf');
+        @import: url('../fonts/Golden_arrow.ttf')
+        src: url('../fonts/golden_arrow.otf');;
         font-family: 'Golden Arrow', serif;
         letter-spacing: 3px;
         text-align: center;
