@@ -77,6 +77,17 @@
 	color: #505050;
 }
 
+.ingles-btn {
+  background-color: #F6C13F;
+  border-color: #F6C13F;
+  width: 70%;
+}
+
+.insc-btn:hover, .noThanks-btn:hover {
+  transform: translateY(-3px);
+}
+
+
 body {
   margin: 0;
   padding: 0;
