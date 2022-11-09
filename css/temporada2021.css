@@ -65,6 +65,20 @@
         "vid5 vid5 vid6 vid6 vid7 vid7";
         gap: 15px;
     }
+
+    .container-grid-vid-22 {
+        display: grid;
+        height: 150vh;
+        grid-template-columns: repeat(3, 1fr);
+        /* grid-template-rows: repeat(5, 1fr); */
+        grid-template-areas:
+        "vid1 vid1 vid1"
+        "vid1 vid1 vid1"
+        "vid2 vid3 vid4"
+        "vid5 vid6 vid7"
+        "vid8 vid9 vid10";
+        gap: 15px;
+    }
     
     .vid {
         width: 100%;
@@ -99,7 +113,16 @@
     .vid-7 {
         grid-area: vid7;
     }
-
+    .vid-8 {
+        grid-area: vid8;
+    }
+    .vid-9 {
+        grid-area: vid9;
+    }
+    .vid-10 {
+        grid-area: vid10;
+    }
+    
     
     
     /* --------------------- RESPONSIVE --------------------- */
