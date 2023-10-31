@@ -105,10 +105,22 @@ header nav {
     
         header nav .nav-bar ul li {
         display: block;
+        margin: 20px;
         float: none;
         border-bottom: 1px solid rgba(255, 255, 255, .3);
         padding: 10px 0;
         font-family: 'Gentium Book Basic', serif;
+
+            /* & a {
+                margin: auto;
+                &::after {
+                    content: '';
+                    width: 100%;
+                    height: 2px;
+                    background-color: white;
+                    display: blocK;
+                }
+            } */
         }
     
         header nav ul li a {

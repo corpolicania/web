@@ -49,8 +49,32 @@ header nav ul li a {
   cursor: pointer;
 }
 
-header nav .nav-bar ul li a:hover {
-  background: #008993;
+header {
+  & nav {
+    & .nav-bar {
+      & ul {
+        & li {
+          & a {
+
+            &::after {
+              content: '';
+              height: 1.5px;
+              background-color: white;
+              width: 0%;
+              display: block;
+              margin-top: 8px;
+              transition: all ease-in-out 300ms;
+            }
+            &:hover {
+              &::after {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 header nav ul li span {
