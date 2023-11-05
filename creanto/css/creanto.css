@@ -8,7 +8,7 @@ body {
 
 .creanto-menu {
 	width: 20%;
-	top: 80px;
+	height: 100vh;
 	position: absolute;
 	background-color: transparent;
 	color: black;
