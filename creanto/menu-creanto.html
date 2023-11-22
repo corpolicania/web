@@ -15,9 +15,9 @@
 <header>
 
   <!-- <div id="menu"> -->
-    <div class="menu_bar">
+    <!-- <div class="menu_bar">
       <a href="#" class="btn-menu"><span class="icon-bars"></span>Menú</a>
-    </div>
+    </div> -->
     <nav>
       <div class="nav-bar">
         <ul>
@@ -63,18 +63,24 @@
       </ul>
 
     </nav>
-    
-    <nav class="creanto-menu" id="menu-creanto">
-      <ul>
-        <div class="menu-title" id="menu-title">
+    <div class="open-creanto" id="open-creanto">
+      <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
+        <path d="M 3 8 A 2.0002 2.0002 0 1 0 3 12 L 47 12 A 2.0002 2.0002 0 1 0 47 8 L 3 8 z M 3 23 A 2.0002 2.0002 0 1 0 3 27 L 47 27 A 2.0002 2.0002 0 1 0 47 23 L 3 23 z M 3 38 A 2.0002 2.0002 0 1 0 3 42 L 47 42 A 2.0002 2.0002 0 1 0 47 38 L 3 38 z"></path>
+      </svg>
+    </div>
 
-          <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
-            <path d="M 3 8 A 2.0002 2.0002 0 1 0 3 12 L 47 12 A 2.0002 2.0002 0 1 0 47 8 L 3 8 z M 3 23 A 2.0002 2.0002 0 1 0 3 27 L 47 27 A 2.0002 2.0002 0 1 0 47 23 L 3 23 z M 3 38 A 2.0002 2.0002 0 1 0 3 42 L 47 42 A 2.0002 2.0002 0 1 0 47 38 L 3 38 z"></path>
-          </svg>
-          <h3>Navega entre las obras</h3>
-        </div>
+    <nav class="creanto-menu" id="menu-creanto">
+      <div class="menu-title" id="menu-title">
+
+        <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
+          <path d="M 3 8 A 2.0002 2.0002 0 1 0 3 12 L 47 12 A 2.0002 2.0002 0 1 0 47 8 L 3 8 z M 3 23 A 2.0002 2.0002 0 1 0 3 27 L 47 27 A 2.0002 2.0002 0 1 0 47 23 L 3 23 z M 3 38 A 2.0002 2.0002 0 1 0 3 42 L 47 42 A 2.0002 2.0002 0 1 0 47 38 L 3 38 z"></path>
+        </svg>
+        <h3>Navega entre las obras</h3>
+      </div>
+      
+      <ul>
         <li>
-          <a href="https://drive.google.com/file/d/1fAg6SY9Xd6zEVRKxcoW9k3H1o0pVoBCe/view?usp=sharing" target="_blank"><strong>Cartilla en PDF</strong></a>
+          <a href="https://drive.google.com/file/d/1fAg6SY9Xd6zEVRKxcoW9k3H1o0pVoBCe/view?usp=sharing" rel target="_blank"><strong>Cartilla en PDF</strong></a>
         </li>
         <li>
           <a href="creanto.html">Creanto</a>
@@ -109,15 +115,22 @@
 
 <script src="./js/menu-creanto.js" type="text/javascript"></script>
 
-<!-- <script>
+<script>
   let botonMenu = document.getElementById('menu-title')
   let menu = document.getElementById('menu-creanto')
+  // let openMenu = document.getElementById('open-creanto')
 
   botonMenu.addEventListener('click', () => {
     menu.style.display = 'none'
-  } )
 
-</script> -->
+  } )
+  // openMenu.addEventListener('click', () => {
+  //   menu.style.display = 'flex'
+  //   openMenu.style.display = 'none'
+  // } )
+
+
+</script>
 </header>
 
 </html>

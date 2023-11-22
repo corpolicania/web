@@ -5,17 +5,33 @@ function main() {
      $('menu-creanto').click(function() {
        // $('nav').toggle()
         
-     if(contador == 1) {
-      $('nav').animate({
-           left: '0'
-     })
-          contador = 0
-     } else {
-         $('nav').animate({
-           left: '-100%'
-     })
-              contador = 1
-     }
+          if(contador == 1) {
+               $('nav').animate({
+                    left: '0'
+               })
+               contador = 0
+          } else {
+               $('nav').animate({
+                    left: '-100%'
+               })
+               contador = 1
+          }
         
      })
+     // $('open-creanto').click(function() {
+     //      // $('nav').toggle()
+           
+     //         if(contador == 1) {
+     //              $('nav').animate({
+     //                   right: '100%'
+     //              })
+     //              contador = 0
+     //         } else {
+     //              $('nav').animate({
+     //                right: '0'
+     //              })
+     //              contador = 1
+     //         }
+           
+     //    })
 }
